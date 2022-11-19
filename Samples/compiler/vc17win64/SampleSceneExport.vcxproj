@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="checked|Win32">
+      <Configuration>checked</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="checked|x64">
+      <Configuration>checked</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{D28D14A2-5E82-10D4-C462-F1446B04E194}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='checked|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='checked|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='checked|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='checked|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.32505.173</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>../../../bin/win64\</OutDir>
+    <IntDir>x64/SampleSceneExport/Release\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>../../../bin/win64\</OutDir>
+    <IntDir>x64/SampleSceneExport/Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='checked|x64'">
+    <OutDir>../../../bin/win64\</OutDir>
+    <IntDir>x64/SampleSceneExport/checked\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../SampleCommonCode/src;../../SampleCommonCode/src/win;../../../SDKs/Foundation/include;../../../SDKs/Foundation/include/win;../../../SDKs/Physics/include;../../../SDKs/Cooking/include;../../../SDKs/PhysXLoader/include;../../../Tools/NxuStream2;../../../Graphics/include/win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;WIN64;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalOptions>/GR- /GF /fp:fast /MP /Ox /GL  %(AdditionalOptions)</AdditionalOptions>
+      <ExceptionHandling />
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName)64.exe</OutputFile>
+      <AdditionalOptions>/LTCG /OPT:REF /OPT:ICF  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>PhysXLoader64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../../SDKs/lib/win64;../../../Graphics/lib/win32/glut/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(OutDir)$(ProjectName)64.exe.map</MapFileName>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../SampleCommonCode/src;../../SampleCommonCode/src/win;../../../SDKs/Foundation/include;../../../SDKs/Foundation/include/win;../../../SDKs/Physics/include;../../../SDKs/Cooking/include;../../../SDKs/PhysXLoader/include;../../../Tools/NxuStream2;../../../Graphics/include/win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;WIN64;_DEBUG;NX_CHECKED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalOptions>/GR- /GF /fp:fast /MP /Od /Zi  %(AdditionalOptions)</AdditionalOptions>
+      <ExceptionHandling />
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName)64DEBUG.exe</OutputFile>
+      <AdditionalOptions>/DEBUG  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>PhysXLoader64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../../SDKs/lib/win64;../../../Graphics/lib/win32/glut/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(OutDir)$(ProjectName)64DEBUG.exe.map</MapFileName>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='checked|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../SampleCommonCode/src;../../SampleCommonCode/src/win;../../../SDKs/Foundation/include;../../../SDKs/Foundation/include/win;../../../SDKs/Physics/include;../../../SDKs/Cooking/include;../../../SDKs/PhysXLoader/include;../../../Tools/NxuStream2;../../../Graphics/include/win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;WIN64;NDEBUG;NX_CHECKED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalOptions>/GR- /GF /fp:fast /MP /Ox /Zi  %(AdditionalOptions)</AdditionalOptions>
+      <ExceptionHandling />
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName)64CHECKED.exe</OutputFile>
+      <AdditionalOptions>/DEBUG /OPT:REF /OPT:ICF  %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>PhysXLoader64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../../SDKs/lib/win64;../../../Graphics/lib/win32/glut/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(OutDir)$(ProjectName)64CHECKED.exe.map</MapFileName>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Tools\NxuStream2\NXU_Asc2Bin.cpp" />
+    <ClCompile Include="..\..\..\Tools\NxuStream2\NXU_ColladaExport.cpp" />
+    <ClCompile Include="..\..\..\Tools\NxuStream2\NXU_ColladaImport.cpp" />
+    <ClCompile Include="..\..\..\Tools\NxuStream2\NXU_cooking.cpp" />
+    <ClCompile Include="..\..\..\Tools\NxuStream2\NXU_customcopy.cpp" />
+    <ClCompile Include="..\..\..\Tools\NxuStream2\NXU_File.cpp" />
+    <ClCompile Include="..\..\..\Tools\NxuStream2\NXU_Geometry.cpp" />
+    <ClCompile Include="..\..\..\Tools\NxuStream2\NXU_GraphicsMesh.cpp" />
+    <ClCompile Include="..\..\..\Tools\NxuStream2\NXU_helper.cpp" />
+    <ClCompile Include="..\..\..\Tools\NxuStream2\NXU_hull.cpp" />
+    <ClCompile Include="..\..\..\Tools\NxuStream2\NXU_PhysicsExport.cpp" />
+    <ClCompile Include="..\..\..\Tools\NxuStream2\NXU_PhysicsInstantiator.cpp" />
+    <ClCompile Include="..\..\..\Tools\NxuStream2\NXU_ScaledCopy.cpp" />
+    <ClCompile Include="..\..\..\Tools\NxuStream2\NXU_schema.cpp" />
+    <ClCompile Include="..\..\..\Tools\NxuStream2\NXU_SchemaStream.cpp" />
+    <ClCompile Include="..\..\..\Tools\NxuStream2\NXU_Streaming.cpp" />
+    <ClCompile Include="..\..\..\Tools\NxuStream2\NXU_string.cpp" />
+    <ClCompile Include="..\..\..\Tools\NxuStream2\NXU_tinystr.cpp" />
+    <ClCompile Include="..\..\..\Tools\NxuStream2\NXU_tinyxml.cpp" />
+    <ClCompile Include="..\..\..\Tools\NxuStream2\NXU_tinyxmlerror.cpp" />
+    <ClCompile Include="..\..\..\Tools\NxuStream2\NXU_tinyxmlparser.cpp" />
+    <ClCompile Include="..\..\SampleCommonCode\src\cooking.cpp" />
+    <ClCompile Include="..\..\SampleCommonCode\src\DebugRenderer.cpp" />
+    <ClCompile Include="..\..\SampleCommonCode\src\DrawObjects.cpp" />
+    <ClCompile Include="..\..\SampleCommonCode\src\GLFontRenderer.cpp" />
+    <ClCompile Include="..\..\SampleCommonCode\src\PerfRenderer.cpp" />
+    <ClCompile Include="..\..\SampleCommonCode\src\Stream.cpp" />
+    <ClCompile Include="..\..\SampleCommonCode\src\UserAllocator.cpp" />
+    <ClCompile Include="..\..\SampleCommonCode\src\win\MediaPath_WIN.cpp" />
+    <ClCompile Include="..\..\SampleCommonCode\src\win\Timing_WIN.cpp" />
+    <ClCompile Include="..\..\SampleSceneExport\src\NxSampleSceneExport.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Tools\NxuStream2\NXU_Asc2Bin.h" />
+    <ClInclude Include="..\..\..\Tools\NxuStream2\NXU_ColladaExport.h" />
+    <ClInclude Include="..\..\..\Tools\NxuStream2\NXU_ColladaImport.h" />
+    <ClInclude Include="..\..\..\Tools\NxuStream2\NXU_cooking.h" />
+    <ClInclude Include="..\..\..\Tools\NxuStream2\NXU_customcopy.h" />
+    <ClInclude Include="..\..\..\Tools\NxuStream2\NXU_File.h" />
+    <ClInclude Include="..\..\..\Tools\NxuStream2\NXU_Geometry.h" />
+    <ClInclude Include="..\..\..\Tools\NxuStream2\NXU_GraphicsMesh.h" />
+    <ClInclude Include="..\..\..\Tools\NxuStream2\NXU_helper.h" />
+    <ClInclude Include="..\..\..\Tools\NxuStream2\NXU_hull.h" />
+    <ClInclude Include="..\..\..\Tools\NxuStream2\NXU_PhysicsExport.h" />
+    <ClInclude Include="..\..\..\Tools\NxuStream2\NXU_PhysicsInstantiator.h" />
+    <ClInclude Include="..\..\..\Tools\NxuStream2\NXU_ScaledCopy.h" />
+    <ClInclude Include="..\..\..\Tools\NxuStream2\NXU_schema.h" />
+    <ClInclude Include="..\..\..\Tools\NxuStream2\NXU_SchemaStream.h" />
+    <ClInclude Include="..\..\..\Tools\NxuStream2\NXU_SchemaTypes.h" />
+    <ClInclude Include="..\..\..\Tools\NxuStream2\NXU_Streaming.h" />
+    <ClInclude Include="..\..\..\Tools\NxuStream2\NXU_string.h" />
+    <ClInclude Include="..\..\..\Tools\NxuStream2\NXU_tinystr.h" />
+    <ClInclude Include="..\..\..\Tools\NxuStream2\NXU_tinyxml.h" />
+    <ClInclude Include="..\..\SampleCommonCode\src\win\SampleMutex_WIN.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
