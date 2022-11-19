@@ -1,0 +1,3 @@
+2.8.4.6  - https://developer.nvidia.com/rdp/assets/physx-2846-core-windows
+2.8.4.5  - https://disk.yandex.ru/d/IPZ-_oInXrGt7 from https://gamedev.ru/code/forum/?id=149230
+2.8.1.15 - http://files.fyxm.net/68/68633/PhysX_2.8.1_SDK_Core.msi
