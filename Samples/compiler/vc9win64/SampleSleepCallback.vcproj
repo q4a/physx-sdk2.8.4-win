@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+ProjectType="Visual C++"
+Version="9.00"
+Name="SampleSleepCallback"
+>
+<Platforms>
+<Platform Name="x64"/>
+</Platforms>
+<Configurations>
+  <Configuration
+    Name="Release|x64"
+    OutputDirectory="../../../bin/win64"
+    IntermediateDirectory="x64/SampleSleepCallback/Release"
+    ConfigurationType="1"
+    InheritedPropertySheets=""
+    CharacterSet="2"
+    >
+    <Tool
+      Name="VCCLCompilerTool"
+      AdditionalIncludeDirectories="&quot;../../SampleCommonCode/src&quot;;&quot;../../SampleCommonCode/src/win&quot;;&quot;../../../SDKs/Foundation/include&quot;;&quot;../../../SDKs/Foundation/include/win&quot;;&quot;../../../SDKs/Physics/include&quot;;&quot;../../../SDKs/Cooking/include&quot;;&quot;../../../SDKs/PhysXLoader/include&quot;;&quot;../../../Graphics/include/win32&quot;;"
+      PreprocessorDefinitions="WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;WIN64;NDEBUG;"
+      WarningLevel="3"
+      Optimization="4"
+      AdditionalOptions="/GR- /GF /fp:fast /MP /Ox /GL "
+      ExceptionHandling="0"
+      DebugInformationFormat="3"
+      RuntimeLibrary="0"
+      UsePrecompiledHeader="0"
+      PrecompiledHeaderThrough="stdafx.h"
+      ProgramDataBaseFileName="$(IntDir)\$(TargetName).pdb"
+      />
+    <Tool Name="VCCustomBuildTool"/>
+    <Tool 
+      Name="VCLinkerTool" 
+      OutputFile="$(OutDir)/$(ProjectName)64.exe" 
+      ProgramDataBaseFileName="$(TargetDir)\$(TargetName).pdb"
+      AdditionalOptions="/LTCG /OPT:REF /OPT:ICF "
+      AdditionalDependencies="&quot;PhysXLoader64.lib&quot; "
+      AdditionalLibraryDirectories="&quot;../../../SDKs/lib/win64&quot;;&quot;../../../Graphics/lib/win32/glut/x64&quot;;"
+      ImportLibrary="$(OutDir)/$(TargetName).lib"
+      GenerateMapFile="TRUE"
+      MapFileName="$(OutDir)/$(ProjectName)64.exe.map"
+      SubSystem="1"
+      GenerateDebugInformation="true"
+      />
+    <Tool Name="VCMIDLTool"/>
+    <Tool Name="VCPreBuildEventTool"/>
+    <Tool Name="VCPostBuildEventTool"/>
+    <Tool Name="VCPreLinkEventTool"/>
+    <Tool Name="VCResourceCompilerTool"/>
+    <Tool Name="VCWebServiceProxyGeneratorTool"/>
+    <Tool Name="VCXMLDataGeneratorTool"/>
+    <Tool Name="VCWebDeploymentTool"/>
+    <Tool Name="VCManagedWrapperGeneratorTool"/>
+    <Tool Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+  </Configuration>
+  <Configuration
+    Name="Debug|x64"
+    OutputDirectory="../../../bin/win64"
+    IntermediateDirectory="x64/SampleSleepCallback/Debug"
+    ConfigurationType="1"
+    InheritedPropertySheets=""
+    CharacterSet="2"
+    >
+    <Tool
+      Name="VCCLCompilerTool"
+      AdditionalIncludeDirectories="&quot;../../SampleCommonCode/src&quot;;&quot;../../SampleCommonCode/src/win&quot;;&quot;../../../SDKs/Foundation/include&quot;;&quot;../../../SDKs/Foundation/include/win&quot;;&quot;../../../SDKs/Physics/include&quot;;&quot;../../../SDKs/Cooking/include&quot;;&quot;../../../SDKs/PhysXLoader/include&quot;;&quot;../../../Graphics/include/win32&quot;;"
+      PreprocessorDefinitions="WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;WIN64;_DEBUG;NX_CHECKED;"
+      WarningLevel="3"
+      Optimization="4"
+      AdditionalOptions="/GR- /GF /fp:fast /MP /Od /Zi "
+      ExceptionHandling="0"
+      DebugInformationFormat="3"
+      RuntimeLibrary="1"
+      UsePrecompiledHeader="0"
+      PrecompiledHeaderThrough="stdafx.h"
+      ProgramDataBaseFileName="$(IntDir)\$(TargetName).pdb"
+      />
+    <Tool Name="VCCustomBuildTool"/>
+    <Tool 
+      Name="VCLinkerTool" 
+      OutputFile="$(OutDir)/$(ProjectName)64DEBUG.exe" 
+      ProgramDataBaseFileName="$(TargetDir)\$(TargetName).pdb"
+      AdditionalOptions="/DEBUG "
+      AdditionalDependencies="&quot;PhysXLoader64.lib&quot; "
+      AdditionalLibraryDirectories="&quot;../../../SDKs/lib/win64&quot;;&quot;../../../Graphics/lib/win32/glut/x64&quot;;"
+      ImportLibrary="$(OutDir)/$(TargetName).lib"
+      GenerateMapFile="TRUE"
+      MapFileName="$(OutDir)/$(ProjectName)64DEBUG.exe.map"
+      SubSystem="1"
+      GenerateDebugInformation="true"
+      />
+    <Tool Name="VCMIDLTool"/>
+    <Tool Name="VCPreBuildEventTool"/>
+    <Tool Name="VCPostBuildEventTool"/>
+    <Tool Name="VCPreLinkEventTool"/>
+    <Tool Name="VCResourceCompilerTool"/>
+    <Tool Name="VCWebServiceProxyGeneratorTool"/>
+    <Tool Name="VCXMLDataGeneratorTool"/>
+    <Tool Name="VCWebDeploymentTool"/>
+    <Tool Name="VCManagedWrapperGeneratorTool"/>
+    <Tool Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+  </Configuration>
+  <Configuration
+    Name="checked|x64"
+    OutputDirectory="../../../bin/win64"
+    IntermediateDirectory="x64/SampleSleepCallback/checked"
+    ConfigurationType="1"
+    InheritedPropertySheets=""
+    CharacterSet="2"
+    >
+    <Tool
+      Name="VCCLCompilerTool"
+      AdditionalIncludeDirectories="&quot;../../SampleCommonCode/src&quot;;&quot;../../SampleCommonCode/src/win&quot;;&quot;../../../SDKs/Foundation/include&quot;;&quot;../../../SDKs/Foundation/include/win&quot;;&quot;../../../SDKs/Physics/include&quot;;&quot;../../../SDKs/Cooking/include&quot;;&quot;../../../SDKs/PhysXLoader/include&quot;;&quot;../../../Graphics/include/win32&quot;;"
+      PreprocessorDefinitions="WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;WIN64;NDEBUG;NX_CHECKED;"
+      WarningLevel="3"
+      Optimization="4"
+      AdditionalOptions="/GR- /GF /fp:fast /MP /Ox /Zi "
+      ExceptionHandling="0"
+      DebugInformationFormat="3"
+      RuntimeLibrary="0"
+      UsePrecompiledHeader="0"
+      PrecompiledHeaderThrough="stdafx.h"
+      ProgramDataBaseFileName="$(IntDir)\$(TargetName).pdb"
+      />
+    <Tool Name="VCCustomBuildTool"/>
+    <Tool 
+      Name="VCLinkerTool" 
+      OutputFile="$(OutDir)/$(ProjectName)64CHECKED.exe" 
+      ProgramDataBaseFileName="$(TargetDir)\$(TargetName).pdb"
+      AdditionalOptions="/DEBUG /OPT:REF /OPT:ICF "
+      AdditionalDependencies="&quot;PhysXLoader64.lib&quot; "
+      AdditionalLibraryDirectories="&quot;../../../SDKs/lib/win64&quot;;&quot;../../../Graphics/lib/win32/glut/x64&quot;;"
+      ImportLibrary="$(OutDir)/$(TargetName).lib"
+      GenerateMapFile="TRUE"
+      MapFileName="$(OutDir)/$(ProjectName)64CHECKED.exe.map"
+      SubSystem="1"
+      GenerateDebugInformation="true"
+      />
+    <Tool Name="VCMIDLTool"/>
+    <Tool Name="VCPreBuildEventTool"/>
+    <Tool Name="VCPostBuildEventTool"/>
+    <Tool Name="VCPreLinkEventTool"/>
+    <Tool Name="VCResourceCompilerTool"/>
+    <Tool Name="VCWebServiceProxyGeneratorTool"/>
+    <Tool Name="VCXMLDataGeneratorTool"/>
+    <Tool Name="VCWebDeploymentTool"/>
+    <Tool Name="VCManagedWrapperGeneratorTool"/>
+    <Tool Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+  </Configuration>
+</Configurations>
+<References></References>
+<Files>
+  <Filter Name="Source Files" Filter=""> <!--  -->
+    <File RelativePath="..\..\SampleCommonCode\src\win\MediaPath_WIN.cpp">
+    </File>
+    <File RelativePath="..\..\SampleCommonCode\src\win\Timing_WIN.cpp">
+    </File>
+    <File RelativePath="..\..\SampleCommonCode\src\GLFontRenderer.cpp">
+    </File>
+    <File RelativePath="..\..\SampleCommonCode\src\DebugRenderer.cpp">
+    </File>
+    <File RelativePath="..\..\SampleCommonCode\src\PerfRenderer.cpp">
+    </File>
+    <File RelativePath="..\..\SampleCommonCode\src\UserAllocator.cpp">
+    </File>
+    <File RelativePath="..\..\SampleCommonCode\src\DrawObjects.cpp">
+    </File>
+    <File RelativePath="..\..\SampleCommonCode\src\Stream.cpp">
+    </File>
+    <File RelativePath="..\..\SampleCommonCode\src\cooking.cpp">
+    </File>
+    <File RelativePath="..\..\SampleSleepCallback\src\nxsleepcallback.cpp">
+    </File>
+  </Filter>
+  <Filter Name="Header Files" Filter=""> <!--  -->
+    <File RelativePath="..\..\SampleCommonCode\src\win\SampleMutex_WIN.h">
+    </File>
+  </Filter>
+</Files>
+<Globals></Globals>
+</VisualStudioProject>

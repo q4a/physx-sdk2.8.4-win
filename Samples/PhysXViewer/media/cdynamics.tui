@@ -1,0 +1,810 @@
+## Create's 'default' rule for rag doll generation.
+
+TuiComboBegin cd_nxustream
+TuiName "Output Format"
+TuiChoices NxUStream COLLADA
+TuiArg NxUStream
+TuiEnd
+
+TuiSliderBegin cd_minverts
+TuiName "Minimum Vertices Required"
+TuiArg 9
+TuiSliderRange 1 64
+TuiEnd
+
+TuiSliderBegin cd_minvolume
+TuiName "Minimum Percentage Volume"
+TuiArg 0.1
+TuiSliderRange 0.001 1
+TuiEnd
+
+
+TuiCheckboxBegin cd_density
+TuiName "Density"
+TuiArg false
+TuiEnd
+
+TuiSliderBegin cd_densitymass
+TuiName "Mass / Density"
+TuiArg 1
+TuiSliderRange 0.1 20
+TuiEnd
+
+TuiCheckboxBegin cd_disable_concavity
+TuiName "Disable Concavity Check"
+TuiArg false
+TuiEnd
+
+TuiCheckboxBegin cd_disable_merge
+TuiName "Disable Merge"
+TuiArg false
+TuiEnd
+
+TuiCheckboxBegin cd_box
+TuiName "Fit Box"
+TuiArg false
+TuiEnd
+
+TuiCheckboxBegin cd_obb
+TuiName "Use OBB"
+TuiArg false
+TuiEnd
+
+TuiCheckboxBegin cd_sphere
+TuiName "Fit Sphere"
+TuiArg false
+TuiEnd
+
+TuiCheckboxBegin cd_capsule
+TuiName "Fit Capsule"
+TuiArg false
+TuiEnd
+
+TuiCheckboxBegin cd_convex
+TuiName "Fit Convex"
+TuiArg true
+TuiEnd
+
+TuiCheckboxBegin cd_collide
+TuiName "Collide"
+TuiArg true
+TuiEnd
+
+TuiSliderBegin cd_solvercount
+TuiName "SolverCount"
+TuiArg 16
+TuiInt
+TuiSliderRange 0 64
+TuiEnd
+
+TuiSliderBegin cd_lineardamping
+TuiName "Linear Damping"
+TuiArg 0
+TuiSliderRange 0 100
+TuiEnd
+
+TuiSliderBegin cd_angulardamping
+TuiName "Angular Damping"
+TuiArg 0
+TuiSliderRange 0 100
+TuiEnd
+
+TuiSliderBegin cd_boxpercent
+TuiName "Box Percent"
+TuiArg 90
+TuiSliderRange 0 100
+TuiEnd
+
+TuiSliderBegin cd_spherepercent
+TuiName "Sphere Percent"
+TuiArg 80
+TuiSliderRange 0 100
+TuiEnd
+
+TuiSliderBegin cd_capsulepercent
+TuiName "Capsule Percent"
+TuiArg 70
+TuiSliderRange 0 100
+TuiEnd
+
+TuiComboBegin cd_joint
+TuiName "Joint Type"
+TuiArg hinge
+TuiChoices hinge ballsocket ellipsoid free locked
+TuiEnd
+
+TuiComboBegin cd_jointframe
+TuiName "Joint Frame"
+TuiArg YZ
+TuiChoices XZ XY YZ YX ZX ZY
+TuiEnd
+
+TuiSliderBegin cd_jointlimit
+TuiName "Joint Limit"
+TuiSliderRange 0 90
+TuiArg 30
+TuiEnd
+
+TuiSliderBegin cd_jointrestitution
+TuiName "Joint Restitution"
+TuiSliderRange 0 1
+TuiArg 0
+TuiEnd
+
+TuiSliderBegin cd_jointspring
+TuiName "Joint Spring"
+TuiSliderRange 0 4000
+TuiArg 0
+TuiEnd
+
+TuiSliderBegin cd_shrinkratio
+TuiName "Shrink Ratio"
+TuiSliderRange 0 1
+TuiArg 1
+TuiEnd
+
+
+TuiSliderBegin cd_drivespring
+TuiName "Drive Spring"
+TuiArg 0
+TuiSliderRange 0 1
+TuiEnd
+
+TuiSliderBegin cd_drivedamping
+TuiName "Drive Damping"
+TuiArg 0.3
+TuiSliderRange 0 1
+TuiEnd
+
+
+TuiSliderBegin cd_jointdamping
+TuiName "Joint Damping"
+TuiSliderRange 0 4000
+TuiArg 0
+TuiEnd
+
+TuiCheckboxBegin cd_breakable_constraint
+TuiName "Breakable Constraint"
+TuiArg false
+TuiEnd
+
+TuiCheckboxBegin cd_projection
+TuiName "Joint Projection"
+TuiArg false
+TuiEnd
+
+TuiSliderBegin cd_projectiondistance
+TuiName "Projection Distance"
+TuiSliderRange 0 0.1
+TuiArg 0.02
+TuiEnd
+
+TuiSliderBegin cd_projectionangle
+TuiName "Projection Angle"
+TuiArg 5
+TuiSliderRange 0 15
+TuiEnd
+
+
+TuiSliderBegin cd_neighbordistance
+TuiName "neighbor distance"
+TuiArg 4
+TuiInt
+TuiSliderRange 0 20
+TuiEnd
+
+TuiCheckboxBegin collapsetoe
+TuiName "Collapse Toe"
+TuiArg true
+TuiEnd
+
+TuiCheckboxBegin cd_usecloth
+TuiName "Convert to Cloth"
+TuiArg false
+TuiEnd
+
+TuiCheckboxBegin cd_cloth_visualization
+TuiName "Cloth Visualization"
+TuiArg true
+TuiEnd
+
+
+
+TuiCheckboxBegin cd_cloth_double_sided
+TuiName "Double Sided Cloth"
+TuiArg false
+TuiEnd
+
+TuiCheckboxBegin cd_staticmesh
+TuiName "Treat Skeletal Mesh as One Object"
+TuiArg false
+TuiEnd
+
+TuiCheckboxBegin collapsefinger
+TuiName "Collapse Finger"
+TuiArg true
+TuiEnd
+
+TuiCheckboxBegin collapsehand
+TuiName "Collapse Hand"
+TuiArg false
+TuiEnd
+
+
+TuiCheckboxBegin collapsefoot
+TuiName "Collapse Foot"
+TuiArg false
+TuiEnd
+
+TuiCheckboxBegin headsphere
+TuiName "Head Sphere"
+TuiArg false
+TuiEnd
+
+TuiComboBegin cd_mesh
+TuiArg deer_bound.obj
+TuiEnd
+
+TuiCheckboxBegin cd_collision
+TuiName "Collision Only"
+TuiArg false
+TuiEnd
+
+TuiButtonBegin cd_dynamics
+TuiName "Create Dynamics"
+TuiElement saverules
+TuiScript CreateDynamics %cd_mesh %cd_nxustream
+TuiEnd
+
+TuiSliderBegin cd_depth
+TuiName "Decomposition Depth"
+TuiInt
+TuiSliderRange 1 10
+TuiArg 1
+TuiEnd
+
+TuiSliderBegin cd_cpercent
+TuiName "Concavity Threshold"
+TuiSliderRange 0 100
+TuiArg 1
+TuiEnd
+
+TuiSliderBegin cd_mpercent
+TuiName "Merge Threshold"
+TuiSliderRange 0 100
+TuiArg 10
+TuiEnd
+
+TuiSliderBegin cd_maxvertices
+TuiName "Max Hull Vertices"
+TuiInt
+TuiSliderRange 3 256
+TuiArg 24
+TuiEnd
+
+TuiSliderBegin cd_skinwidth
+TuiName "Hull Skin Width"
+TuiSliderRange 0 0.1
+TuiArg 0
+TuiEnd
+
+TuiCheckboxBegin cd_cloth_metal
+TuiName "Metal Cloth"
+TuiArg false
+
+TuiScript /cd_cloth_thickness 0.05
+TuiScript /cd_cloth_density 1.0
+TuiScript /cd_cloth_bending_stiffness 1.0
+TuiScript /cd_cloth_stretching_stiffness 1.0
+TuiScript /cd_cloth_friction 0.5
+TuiScript /cd_cloth_static false
+TuiScript /cd_cloth_pressure false
+TuiScript /cd_cloth_collision true
+TuiScript /cd_cloth_visualization true
+TuiScript /cd_cloth_gravity true
+TuiScript /cd_cloth_solver_iterations 5
+TuiScript /cd_cloth_bending true
+TuiScript /cd_cloth_collision_twoway false
+TuiScript /cd_cloth_collision_response_coefficient 0.1
+TuiScript /cd_cloth_bending_ortho true
+TuiScript /cd_cloth_damping_coefficient 0.5
+TuiScript /cd_cloth_damping true
+TuiScript /cd_cloth_comdamping true
+TuiScript /cd_cloth_tearable false
+TuiScript /cd_cloth_external_acceleration_x 0.0
+TuiScript /cd_cloth_external_acceleration_y 0.0
+TuiScript /cd_cloth_external_acceleration_z 0.0
+TuiScript /cd_cloth_sleep_linear_velocity -1.0
+
+TuiEnd
+
+TuiScriptBegin saverules
+
+TuiScript TuiFileOpen rules.rul
+TuiScript TuiFileSave RuleBegin default
+TuiScript TuiFileSave minverts           = %cd_minverts
+TuiScript TuiFileSave minvolume          = %cd_minvolume
+Tuiscript TuiFileSave collisiononly      = %cd_collision
+TuiScript TuiFileSave staticmesh         = %cd_staticmesh
+TuiScript TuiFileSave cloth              = %cd_usecloth
+TuiScript TuiFileSave cloth_double_sided = %cd_cloth_double_sided
+TuiScript TuiFileSave softbody           = %cd_softbody
+TuiScript TuiFileSave generate_constraints = %cd_generate_constraints
+TuiScript TuiFileSave compound           = %cd_compound
+TuiScript TuiFileSave gravity            = %cd_gravity
+TuiScript TuiFileSave decompositiondepth = %cd_depth
+TuiScript TuiFileSave concavethreshold   = %cd_cpercent
+TuiScript TuiFileSave mergethreshold     = %cd_mpercent
+TuiScript TuiFileSave maxvertices        = %cd_maxvertices
+TuiScript TuiFileSave skinwidth          = %cd_skinwidth
+TuiScript TuiFileSave @if_cd_density    density = %cd_densitymass
+TuiScript TuiFileSave @nt_cd_density    mass    = %cd_densitymass
+TuiScript TuiFileSave solvercount        = %cd_solvercount
+TuiScript TuiFileSave collide            = %cd_collide
+TuiScript TuiFileSave lineardamping      = %cd_lineardamping
+TuiScript TuiFileSave angulardamping     = %cd_angulardamping
+TuiScript TuiFileSave shrinkratio        = %cd_shrinkratio
+TuiScript TuiFileSave disable_concavity  = %cd_disable_concavity
+TuiScript TuiFileSave disable_merge      = %cd_disable_merge
+TuiScript TuiFileSave box                = %cd_box
+TuiScript TuiFileSave sphere             = %cd_sphere
+TuiScript TuiFileSave capsule            = %cd_capsule
+TuiScript TuiFileSave boxpercent         = %cd_boxpercent
+TuiScript TuiFileSave spherepercent      = %cd_spherepercent
+TuiScript TuiFileSave capsulepercent     = %cd_capsulepercent
+TuiScript TuiFileSave convex             = %cd_convex
+TuiScript TuiFileSave obb                = %cd_obb
+TuiScript TuiFileSave joint              = %cd_joint
+TuiScript TuiFileSave jointframe         = %cd_jointframe
+TuiScript TuiFileSave jointlimit         = %cd_jointlimit
+TuiScript TuiFileSave jointrestitution   = %cd_jointrestitution
+TuiScript TuiFileSave jointspring        = %cd_jointspring
+TuiScript TuiFileSave jointdamping       = %cd_jointdamping
+TuiScript TuiFileSave drivespring        = %cd_drivespring
+TuiScript TuiFileSave drivedamping       = %cd_drivedamping
+TuiScript TuiFileSave breakable_constraint = %cd_breakable_constraint
+TuiScript TuiFileSave projection         = %cd_projection
+TuiScript TuiFileSave projectiondistance = %cd_projectiondistance
+TuiScript TuiFileSave projectionangle    = %cd_projectionangle
+TuiScript TuiFileSave neighbordistance   = %cd_neighbordistance
+
+### cloth section
+
+TuiScript TuiFileSave cloth_tesselate                         = %cd_cloth_tesselate
+TuiScript TuiFileSave cloth_tesselate_threshold               = %cd_cloth_tesselate_threshold
+TuiScript TuiFileSave cloth_metal                             = %cd_cloth_metal
+TuiScript TuiFileSave cloth_pressure                          = %cd_cloth_pressure
+TuiScript TuiFileSave cloth_static                            = %cd_cloth_static
+TuiScript TuiFileSave cloth_disable_collision                 = %cd_cloth_disable_collision
+TuiScript TuiFileSave cloth_visualization                     = %cd_cloth_visualization  ### New!
+TuiScript TuiFileSave cloth_gravity                           = %cd_cloth_gravity
+TuiScript TuiFileSave cloth_bending                           = %cd_cloth_bending
+TuiScript TuiFileSave cloth_bending_ortho                     = %cd_cloth_bending_ortho
+TuiScript TuiFileSave cloth_damping                           = %cd_cloth_damping
+TuiScript TuiFileSave cloth_collision_twoway                  = %cd_cloth_collision_twoway
+TuiScript TuiFileSave cloth_triangle_collision                = %cd_cloth_triangle_collision
+TuiScript TuiFileSave cloth_tearable                          = %cd_cloth_tearable
+TuiScript TuiFileSave cloth_hardware                          = %cd_cloth_hardware
+TuiScript TuiFileSave cloth_comdamping                        = %cd_cloth_comdamping ### New!
+TuiScript TuiFileSave cloth_attachment_twoway                 = %cd_cloth_attachment_twoway ### New!
+TuiScript TuiFileSave cloth_attachment_tearable               = %cd_cloth_attachment_tearable ### New!
+TuiScript TuiFileSave cloth_thickness                         = %cd_cloth_thickness
+TuiScript TuiFileSave cloth_density                           = %cd_cloth_density
+TuiScript TuiFileSave cloth_bending_stiffness                 = %cd_cloth_bending_stiffness
+TuiScript TuiFileSave cloth_stretching_stiffness              = %cd_cloth_stretching_stiffness
+TuiScript TuiFileSave cloth_damping_coefficient               = %cd_cloth_damping_coefficient
+TuiScript TuiFileSave cloth_friction                          = %cd_cloth_friction
+TuiScript TuiFileSave cloth_pressure_coefficient              = %cd_cloth_pressure_coefficient
+TuiScript TuiFileSave cloth_tear_factor                       = %cd_cloth_tear_factor
+TuiScript TuiFileSave cloth_collision_response_coefficient    = %cd_cloth_collision_response_coefficient
+TuiScript TuiFileSave cloth_attachment_response_coefficient   = %cd_cloth_attachment_response_coefficient
+TuiScript TuiFileSave cloth_solver_iterations                 = %cd_cloth_solver_iterations
+TuiScript TuiFileSave cloth_external_acceleration             = %cd_cloth_external_acceleration_x %cd_cloth_external_acceleration_y %cd_cloth_external_acceleration_z
+TuiScript TuiFileSave cloth_wakeup_counter                    = %cd_cloth_wakeup_counter ## New!
+TuiScript TuiFileSave cloth_sleep_linear_velocity             = %cd_cloth_sleep_linear_velocity ### New!
+
+###
+
+
+TuiScript TuiFileSave RuleEnd
+
+TuiScript TuiFileSave @if_headsphere *head* sphere=true box=false convex=false capsule=false
+TuiScript TuiFileSave *toe*              collapse = %collapsetoe
+TuiScript TuiFileSave *finger*           collapse = %collapsefinger
+TuiScript TuiFileSave *hand*             collapse = %collapsehand
+TuiScript TuiFileSave *foot*             collapse = %collapsefoot
+
+
+
+TuiScript TuiFileClose
+
+
+
+TuiEnd
+
+TuiPageBegin ConstraintRules
+TuiElement CreateDynamics
+TuiElement cd_dynamics
+TuiElement cd_joint
+TuiElement cd_jointframe
+TuiElement cd_jointlimit
+TuiElement cd_drivespring
+TuiElement cd_drivedamping
+TuiElement cd_jointrestitution
+TuiElement cd_jointspring
+TuiElement cd_jointdamping
+TuiElement cd_breakable_constraint
+TuiElement cd_projection
+TuiElement cd_projectiondistance
+TuiElement cd_projectionangle
+TuiElement cd_neighbordistance
+TuiElement collapsetoe
+TuiElement collapsefinger
+TuiElement collapsefoot
+TuiElement collapsehand
+TuiElement headsphere
+## Page layout options
+TuiButtonWidth								 150
+TuiButtonHeight									18
+TuiButtonSpacing								20
+TuiLayoutLeftMargin						 300
+TuiLayoutWidth								1024
+TuiSliderSpacing								20
+TuiSliderTextWidth						 150
+TuiSliderHeight									18
+TuiSliderWidth								 400
+TuiComboWidth									 400
+TuiComboSpacing									42
+TuiComboHeight									20
+TuiComboDropdown							 100
+TuiListWidth									 300
+TuiTextSpacing								  24
+TuiEnd
+
+
+#### cloth settings
+####
+#### flags
+####
+#### NX_CLF_PRESSURE
+#### NX_CLF_STATIC
+#### NX_CLF_DISABLE_COLLISION
+#### NX_CLF_SELFCOLLISION
+#### NX_CLF_VISUALIZATION
+#### NX_CLF_GRAVITY
+#### NX_CLF_BENDING
+#### NX_CLF_BENDING_ORTHO
+#### NX_CLF_DAMPING
+#### NX_CLF_COLLISION_TWOWAY
+#### NX_CLF_TRIANGLE_COLLISION
+#### NX_CLF_TEARABLE
+#### NX_CLF_HARDWARE
+####
+#### thickness										    0-INF Default: 0.01
+#### density													0-INF Default: 1
+#### bendingStiffness							    0-1  Default: 1
+#### stretchingStiffness					    0-1	 Default: 1
+#### dampingCoeffcient					   	  0-1  Default: 0.5
+#### friction                         0-1  Default: 0.5
+#### pressure											    TRUE/FALSE
+#### tearFactor												0-INF : Default 1.5
+#### collisionResponseCoefficient     0-INF: Default: 0.2
+#### attachmentResponseCoefficient		0-INF Default: 0.2
+#### solverIterations									1-64 Default: 5
+#### externalAcceleration             Vector(0,0,0)
+#### collisionGroup										Default: 0
+#### groupsMask				                Default: 0
+#### useData
+#### name
+
+TuiCheckboxBegin cd_cloth_pressure
+TuiName "Pressure"
+TuiArg true
+TuiEnd
+
+TuiCheckboxBegin cd_cloth_static
+TuiName "Static"
+TuiArg false
+TuiEnd
+
+TuiCheckboxBegin cd_cloth_disable_collision
+TuiName "Disable Collision"
+TuiArg false
+TuiEnd
+
+TuiCheckboxBegin cd_cloth_gravity
+TuiName "Gravity"
+TuiArg true
+TuiEnd
+
+TuiCheckboxBegin cd_cloth_bending
+TuiName "Bending"
+TuiArg false
+TuiEnd
+
+TuiCheckboxBegin cd_cloth_bending_ortho
+TuiName "Bending Ortho"
+TuiArg false
+TuiEnd
+
+TuiCheckboxBegin cd_cloth_damping
+TuiName "Damping"
+TuiArg false
+TuiEnd
+
+TuiCheckboxBegin cd_cloth_collision_twoway
+TuiName "Collision Two Way"
+TuiArg false
+TuiEnd
+
+TuiCheckboxBegin cd_cloth_triangle_collision
+TuiName "Triangle Collision"
+TuiArg false
+TuiEnd
+
+TuiCheckboxBegin cd_cloth_tearable
+TuiName "Tearable"
+TuiArg false
+TuiEnd
+
+TuiCheckboxBegin cd_cloth_hardware
+TuiName "Hardware"
+TuiArg false
+TuiEnd
+
+TuiCheckboxBegin cd_cloth_comdamping
+TuiName "COM Damping"
+TuiArg false
+TuiEnd
+
+TuiCheckboxBegin cd_cloth_attachment_twoway
+TuiName "Attach TwoWay"
+TuiArg false
+TuiEnd
+
+TuiCheckboxBegin cd_cloth_attachment_tearable
+TuiName "Attach Tearable"
+TuiArg false
+TuiEnd
+
+
+TuiCheckboxBegin cd_cloth_tesselate
+TuiName "Tesselate Input Mesh"
+TuiArg false
+TuiEnd
+
+TuiSliderBegin cd_cloth_wakeup_counter
+TuiName "Wakeup Counter"
+TuiArg 0.4
+TuiSliderRange 0 5
+TuiEnd
+
+TuiSliderBegin cd_cloth_sleep_linear_velocity
+TUiName "Sleep Linear Velocity"
+TuiArg -1
+TuiSliderRange -1 10
+TuiEnd
+
+TuiSliderBegin cd_cloth_tesselate_threshold
+TuiName "Tesselate Amount"
+TuiArg 0.1
+TuiSliderRange 0.01 1
+TuiEnd
+
+TuiSliderBegin cd_cloth_thickness
+TuiName "Thickness"
+TuiSliderRange 0 1
+TuiArg 0.01
+TuiEnd
+
+TuiSliderBegin cd_cloth_density
+TuiName "Density"
+TuiSliderRange 0.1 100
+TuiArg 1
+TuiEnd
+
+TuiSliderBegin cd_cloth_bending_stiffness
+TuiName "Bending Stiffness"
+TuiSliderRange 0 1
+TuiArg 1
+TuiEnd
+
+TuiSliderBegin cd_cloth_stretching_stiffness
+TuiName "Stretching Stiffness"
+TuiSliderRange 0 1
+TuiArg 1
+TuiEnd
+
+TuiSliderBegin cd_cloth_damping_coefficient
+TuiName "Damping Coefficient"
+TuiSliderRange 0 1
+TuiArg 0.5
+TuiEnd
+
+TuiSliderBegin cd_cloth_friction
+TuiName "Friction"
+TuiSliderRange 0 1
+TuiArg 0.5
+TuiEnd
+
+TuiSliderBegin cd_cloth_pressure_coefficient
+TuiName "Pressure"
+TuiArg 10
+TuiSliderRange 0 100
+TuiEnd
+
+TuiSliderBegin cd_cloth_tear_factor
+TuiName "Tear Factor"
+TuiSliderRange 0 100
+TuiArg 1.5
+TuiEnd
+
+TuiSliderBegin cd_cloth_collision_response_coefficient
+TuiName "Collision Response Coefficient"
+TuiSliderRange 0 100
+TuiArg 0.2
+TuiEnd
+
+TuiSliderBegin cd_cloth_attachment_response_coefficient
+TuiName "Attachment Response Coefficient"
+TuiSliderRange 0 100
+TuiArg 0.2
+TuiEnd
+
+TuiSliderBegin cd_cloth_solver_iterations
+TuiName "Solver Iterations"
+TuiInt
+TuiSliderRange 1 32
+TuiArg 5
+TuiEnd
+
+TuiSliderBegin cd_cloth_external_acceleration_x
+TuiName "Acceleration X"
+TuiSliderRange -20 20
+TuiArg 0
+TuiEnd
+
+TuiSliderBegin cd_cloth_external_acceleration_y
+TuiName "Acceleration Y"
+TuiSliderRange -20 20
+TuiArg 0
+TuiEnd
+
+TuiSliderBegin cd_cloth_external_acceleration_z
+TuiName "Acceleration Z"
+TuiSliderRange -20 20
+TuiArg 0
+TuiEnd
+
+
+
+
+TuiPageBegin cd_cloth
+TuiName "Cloth Settings"
+TuiElement CreateDynamics
+TuiElement cd_dynamics
+
+TuiElement cd_cloth_metal
+TuiElement cd_cloth_pressure
+TuiElement cd_cloth_static
+TuiElement cd_cloth_disable_collision
+TuiElement cd_cloth_visualization
+TuiElement cd_cloth_gravity
+TuiElement cd_cloth_bending
+TuiElement cd_cloth_bending_ortho
+TuiElement cd_cloth_damping
+TuiElement cd_cloth_collision_twoway
+TuiElement cd_cloth_triangle_collision
+TuiElement cd_cloth_tearable
+TuiElement cd_cloth_hardware
+TuiElement cd_cloth_comdamping
+TuiElement cd_cloth_attachment_twoway
+TuiElement cd_cloth_attachment_tearable
+
+TuiElement cd_cloth_tesselate
+TuiElement cd_cloth_tesselate_threshold
+
+
+TuiElement cd_cloth_thickness
+TuiElement cd_cloth_density
+TuiElement cd_cloth_bending_stiffness
+TuiElement cd_cloth_stretching_stiffness
+TuiElement cd_cloth_damping_coefficient
+TuiElement cd_cloth_friction
+TuiElement cd_cloth_pressure_coefficient
+TuiElement cd_cloth_tear_factor
+TuiElement cd_cloth_collision_response_coefficient
+TuiElement cd_cloth_attachment_response_coefficient
+TuiElement cd_cloth_solver_iterations
+TuiElement cd_cloth_external_acceleration_x
+TuiElement cd_cloth_external_acceleration_y
+TuiElement cd_cloth_external_acceleration_z
+TuiElement cd_cloth_wakeup_counter
+TuiElement cd_cloth_sleep_linear_velocity
+
+
+TuiEnd
+
+TuiCheckboxBegin cd_gravity
+TuiName "Gravity"
+TuiArg true
+TuiEnd
+
+
+TuiCheckboxBegin cd_compound
+TuiName "Compound Object"
+TuiArg true
+TuiEnd
+
+TuiCheckboxBegin cd_generate_constraints
+TuiName "Auto-Generate Constraints"
+TuiArg false
+TuiEnd
+
+TuiCheckboxBegin cd_softbody
+TuiName "Create Soft Body"
+TuiArg false
+TuiEnd
+
+TuiPageBegin CreateDynamics
+TuiName "Dynamics Page"
+TuiElement SoftBodies
+##TuiElement top
+##TuiElement cd_mesh
+TuiElement cd_dynamics
+TuiElement ConstraintRules
+##TuiElement cd_cloth
+TuiElement cd_nxustream
+##TuiElement cd_collision
+##TuiElement cd_usecloth
+##TuiElement cd_softbody
+TuiElement cd_generate_constraints
+##TuiElement cd_compound
+TuiElement cd_gravity
+##TuiElement cd_cloth_double_sided
+##TuiElement cd_staticmesh
+TuiElement cd_depth
+TuiElement cd_cpercent
+TuiElement cd_mpercent
+TuiElement cd_maxvertices
+TuiElement cd_skinwidth
+TuiElement cd_shrinkratio
+TuiElement cd_disable_concavity
+TuiElement cd_disable_merge
+TuiElement cd_box
+TuiElement cd_obb
+TuiElement cd_sphere
+TuiElement cd_capsule
+TuiElement cd_convex
+TuiElement cd_collide
+TuiElement cd_solvercount
+TuiElement cd_density
+TuiElement cd_densitymass
+TuiElement cd_lineardamping
+TuiElement cd_angulardamping
+TuiElement cd_boxpercent
+TuiElement cd_spherepercent
+TuiElement cd_capsulepercent
+TuiElement cd_minverts
+TuiElement cd_minvolume
+
+## Page layout options
+TuiButtonWidth								 150
+TuiButtonHeight									18
+TuiButtonSpacing								20
+TuiLayoutLeftMargin						 300
+TuiLayoutWidth								1024
+TuiSliderSpacing								20
+TuiSliderTextWidth						 150
+TuiSliderHeight									18
+TuiSliderWidth								 400
+TuiComboWidth									 400
+TuiComboSpacing									42
+TuiComboHeight									20
+TuiComboDropdown							 100
+TuiListWidth									 300
+TuiTextSpacing								  24
+
+
+TuiEnd
+

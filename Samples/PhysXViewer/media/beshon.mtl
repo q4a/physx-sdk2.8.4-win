@@ -1,0 +1,12 @@
+newmtl beshon_map.tga
+Ns 30
+Ka 0 0 0
+Kd 0.992157 0.796078 0.717647
+Ks 0.0901961 0.0901961 0.0901961
+map_Kd beshon_map.tga
+newmtl beshon_basket_map.tga
+Ns 30
+Ka 0 0 0
+Kd 0.992157 0.796078 0.717647
+Ks 0.0901961 0.0901961 0.0901961
+map_Kd beshon_basket_map.tga

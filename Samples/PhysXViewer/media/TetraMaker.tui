@@ -1,0 +1,13 @@
+
+Run cdynamics.tui
+
+TuiPageBegin top
+TuiCommand top
+TuiName    "Main Menu"
+TuiElement  SoftBodies
+TuiElement  CreateDynamics
+TuiEnd
+
+## Start at the 'top'
+TuiPage SoftBodies
+

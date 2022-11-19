@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+  <SceneGraph name="rat.obj">
+    <Mesh name="rat.obj">
+    </Mesh>
+  </SceneGraph>

@@ -1,0 +1,974 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 12 (filtered)">
+<title>PhysXViewer 1</title>
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Arial","sans-serif";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Cambria","serif";
+	color:#365F91;
+	font-weight:bold;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+.MsoChpDefault
+	{font-size:10.0pt;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink=purple>
+
+<div class=Section1>
+
+<h1 align=center style='text-align:center'>PhysXViewer 1.0</h1>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><i>(Notice: Since the PhysXViewer is a DirectX 9.0 sample
+application it requires the DirectX 9.0 October 2006 release to be installed to
+build.)</i></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The PhysXViewer is used to create tetrahedral meshes
+suitable for simulation with the soft body API in the 2.7 PhysX SDK.  Future
+versions will handle rag doll models and be used to demonstrate rendering
+options for cloth, fluids, and rigid bodies.  It is provided as a larger source
+code sample to assist and demonstrate how to integrate soft body into a game
+engine.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The PhysXViewer supports the following import and export
+formats:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal>Wavefront OBJ and TET files</li>
+ <li class=MsoNormal>EZ-Mesh</li>
+ <li class=MsoNormal>NxuStream</li>
+</ul>
+
+<p class=MsoNormal style='margin-left:.25in'>&nbsp;</p>
+
+<p class=MsoNormal><b>Wavefront OBJ and TET files</b>:  The Wavefront OBJ file
+format is the simplest possible graphics file format to transfer raw geometry
+data.  This graphics format is supported by virtually all 3D authoring
+packages.  While the graphics content is represented in the OBJ file the
+tetrahedral representation is described in a corresponding .TET file.   </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The provided SoftBody samples both use the combined OBJ and
+TET files to demonstrate how to load, simulate, and graphically render a
+SoftBody mesh.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>EZ-Mesh</b>: The EZ-mesh file format is similar to
+Wavefront OBJ in terms of simplicity but has been expanded to support skeletal deformed meshes.  No exporter is currently available for this file format but
+it is sometimes convenient to use this representation.  EZ-mesh also supports embedded tetrahedral geometry. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>NxuStream</b>:  This is the standard serialization
+library for the PhysX SDK.  NxuStream not only supports the complete SoftBody
+specification but will also annotate the tetrahedral mesh via the user
+properties field to indicate the source graphics mesh to bind with.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>How to create a valid tetrahedral mesh using PhysXViewer:</b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal>First export your geometry as a Wavefront OBJ file.  </li>
+ <li class=MsoNormal>Launch the PhysXViewer application.</li>
+ <li class=MsoNormal>Under the ‘file’ menu select ‘Import Graphics Wavefront
+     OBJ’</li>
+ <li class=MsoNormal>Browse for your exported OBJ file and select it.</li>
+ <li class=MsoNormal>Your Wavefront OBJ file should now be visible within the
+     graphics display.</li>
+ <li class=MsoNormal>The next step is to generate a triangle mesh from which to
+     extract the tetrahedral geometry.</li>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal>Copy Surface: Copies the original graphics mesh and
+      optimizes it using quadratic optimization based on the value of the ‘Mesh
+      Detail’ slider.</li>
+  <li class=MsoNormal>Iso Surface: Generates a perfect isometric surface mesh
+      based on the subdivision detail and mesh detail sliders.  An isometric
+      surface is an evenly distributed mesh over the skin of the original
+      object and usually provides the best results for simulation.  The
+      combination of the ‘mesh detail’ slider (which performs a quadratic
+      approximation of the triangulated mesh) and the ‘subdivision slider’
+      (which controls the detail level of the isometric surface) will affect
+      the overall detail and simulation complexity of the resulting tetrahedral
+      mesh.  By default the isometric surface will contain both an interior and
+      exterior copy of the approximated surface.  This generally produces a
+      more robust simulation result.  To eliminate the interior mesh component
+      simply select the checkbox labeled ‘IsoSingle’</li>
+ </ul>
+ <li class=MsoNormal>Once you have generated a source mesh with the level of
+     detail you feel is adequate the next step is to convert it into a
+     tetrahedral volumetric mesh.  Simply click the button labeled ‘Generate
+     Volume’ to produce the result.  </li>
+ <li class=MsoNormal>Now that you have a valid tetrahedral mesh simply click on
+     the button marked ‘Simulate SoftBody’ to see the results.  Using the right
+     mouse you should be able to select and drag the simulated soft body.  To
+     visualize the original graphics mesh using free-form deformation simply
+     turn off the checkbox marked ‘SHOW_TETRAHEDRA’.</li>
+ <li class=MsoNormal>You may now export the results as either a Wavefront OBJ
+     with corresponding TET file, an EZ-mesh file, or as an NxuStream data
+     asset using the file menu.</li>
+</ul>
+
+<p class=MsoNormal style='text-align:justify'>&nbsp;</p>
+
+<p class=MsoNormal><b>Editing a Tetrahedral Mesh:</b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal>While viewing a tetrahedral mesh hold down the left or
+     right shift key.  Individual tetrahedron will be highlighted in yellow.</li>
+ <li class=MsoNormal>To delete a single tetrahedron hit the left mouse button
+     while holding the shift key.</li>
+ <li class=MsoNormal>To undelete a single tetrahedron hit the right mouse
+     button while holding the shift key.</li>
+ <li class=MsoNormal>To simulate the edited mesh click the ‘Simulate SoftBody’
+     button.</li>
+ <li class=MsoNormal>To go back to editing click the button ‘Stop Simulation’</li>
+</ul>
+
+<p class=MsoNormal style='margin-left:.25in'>&nbsp;</p>
+
+<p class=MsoNormal><b>Building the source code to PhysXViewer</b>:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal>Go to the directory
+     “.\Samples\PhysXViewer\compiler\vc71win32” for Visual Studio 2003 or
+     “.\Samples\PhysXViewer\compiler\vc8win32” for Visual Studio 2005.</li>
+ <li class=MsoNormal>The PhysXViewer uses the DirectX 9.0 SDK October 2006
+     release.  You must have this installed on your machine and the include and
+     library paths set to build the source code.</li>
+ <li class=MsoNormal>With the PhysX SDK and the DirectX 9.0 SDK installed you
+     should be able to build and run the PhysXViewer in both debug and release
+     builds.  The output executable is located in ‘.\bin\win32\PhysXViewer.exe’</li>
+ <li class=MsoNormal>Source to the application is located in
+     “.\Samples\PhysXViewer\src”</li>
+ <li class=MsoNormal>The directory “.\Samples\PhysXViewer\src\common” contains
+     general utility source code for all DirectX 9.0 sample applications.</li>
+ <li class=MsoNormal>The directory “.\Samples\PhysXViewer\src\tui” contains
+     source code to manage the graphics user interface for the application.</li>
+ <li class=MsoNormal>The directory “.\tools\softbody” contains source code to
+     the soft body library.  This code is provided as ‘engine ready’ sample
+     code that a developer can leverage against to quickly integrate the
+     run-time and editing functionality into their own game engine.</li>
+ <li class=MsoNormal>The directory “.\tools\NxuStream’ contains the source code
+     to the PhysX SDK serialization library.</li>
+</ul>
+
+<p class=MsoNormal style='margin-left:.25in'>&nbsp;</p>
+
+<p class=MsoNormal><b>User Interface</b>:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal>Press F1 to toggle the user interface elements on and off.</li>
+ <li class=MsoNormal>Press ESC to exit the application.</li>
+ <li class=MsoNormal>Press TAB to toggle the console view on off.</li>
+ <li class=MsoNormal>Press HOME to return the camera to the default position.</li>
+ <li class=MsoNormal>Press SPACE to shoot a sphere into the scene</li>
+ <li class=MsoNormal>Press B to toggle between a physics visualization or a
+     graphics visualization of the simulation.</li>
+ <li class=MsoNormal>Left mouse moves the camera view around.</li>
+ <li class=MsoNormal>WASD and the left mouse button to fly the camera around.</li>
+ <li class=MsoNormal>0-9 controls the speed at which the camera moves.</li>
+ <li class=MsoNormal>R – Resets the scene.</li>
+ <li class=MsoNormal>P – Pauses or un-pauses the simulation.</li>
+ <li class=MsoNormal> Right Mouse : Selects and drags a soft body that is being
+     simulated.</li>
+ <li class=MsoNormal>Shift+Left Mouse: Deletes a tetrahedron</li>
+ <li class=MsoNormal>Shift + Right Mouse: Undeletes a tetrahedron.</li>
+ <li class=MsoNormal>Right Mouse + drag: Rotates a non-simulated graphics
+     object in the view.</li>
+</ul>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal style='margin-right:260.25pt'><b><img width=870 height=699
+id="Picture 1" src="PhysXViewer_files/image001.jpg" alt=screen1></b></p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt'>The PhysXViewer</span> is
+a DirectX 9.0 compatible sample application.  To build the source code you will
+need to have the <a href="http://msdn.microsoft.com/directx/">Microsoft DirectX
+9.0 October 2006 SDK release</a>.</b></p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal><b><u><span style='font-size:14.0pt'>Overview</span></u></b></p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal>The soft body feature in the 2.7 PhysX SDK requires a new
+data format to be authored.  The PhysXViewer allows the developer to produce
+this content directly from raw graphics data.  The source code has been
+architected in such a way that it could easily be integrated into other authoring
+tools. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The PhysXViewer converts graphics data into a tetrahedral
+mesh, and then exports that data in a number of forms suitable for integration
+into a game engine.</p>
+
+<p class=MsoNormal><b> </b></p>
+
+<p class=MsoNormal><b><u><span style='font-size:14.0pt'>Walk-Thru</span></u></b></p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal>To convert a raw graphics mesh into a tetrahedral mesh suitable
+for real-time simulation you would follow these steps.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<ol style='margin-top:0in' start=1 type=1>
+ <li class=MsoNormal>Find a suitable graphics mesh and export it as a Wavefront
+     OBJ file.</li>
+ <li class=MsoNormal>Launch the PhysXViewer application.</li>
+ <li class=MsoNormal>Under the ‘File’ menu select ‘Import Wavefront OBJ’</li>
+ <li class=MsoNormal>Use the file browser to select your graphics mesh.</li>
+ <li class=MsoNormal>The graphics mesh should show up in the view window and
+     the view should automatically be adjusted relative to the size of the
+     object.</li>
+ <li class=MsoNormal>The next step is to create a mesh, from which, the
+     tetrahedral geometry will be extracted.  </li>
+ <ol style='margin-top:0in' start=1 type=a>
+  <li class=MsoNormal>Copy Surface : This copies the original graphics mesh
+      directly and will apply a quadratic mesh optimizer based on the results
+      of the slider labeled ‘Mesh Detail’.  The copied surface mesh will show
+      up as a wireframe overlay.  If you only want to see that outline you can
+      select the checkbox ‘Show Graphics Mesh’ to be off.  Remember to put it
+      back on again later otherwise you will be confused with the graphics stop
+      displaying.</li>
+  <li class=MsoNormal>Iso Surface: This is by far the preferred method of
+      generating a mesh for tetrahedral.  This runs an algorithm that
+      ultimately produces a perfectly evenly distributed surface mesh.  The
+      detail level of this surface mesh is controlled by the slider
+      ‘Subdivision Level’.  The higher the number the more finely tessellated
+      the mesh will be.  The goal should be, however, to produce as few
+      triangles as possible to achieve the level of simulation detail you
+      desire.  The ‘Mesh Detail’ slider affects the isosurface as well which
+      can smooth out excessively detailed triangles on surfaces with a low
+      degree of complexity.  By default the isosurface will have both an
+      interior and exterior shell which has been shown to produce the best
+      quality tetrahedral meshes.  You can, however, experiment with only a
+      single isosurface by turning the checkbox labeled ‘IsoSingle’ on.</li>
+ </ol>
+ <li class=MsoNormal>Once you have a surface mesh that you think will make a
+     good candidate next click on the button marked ‘Generate Volume’.  This
+     will convert the triangles from the original surface into a volumetric
+     tetrahedral mesh.  The console will display new number of tetrahedral
+     produced.  Obviously the more tetrahedrons there are the more simulation
+     time the object will require.</li>
+ <li class=MsoNormal>You can edit the tetrahedral mesh by using the left or
+     right mouse button while holding the shift key.  The left mouse will
+     delete tetrahedrons while the right mouse button will undelete.  You must
+     click each time to affect this change.  Using the right mouse button
+     without the shift key will let you rotate the model in the view port.</li>
+ <li class=MsoNormal>To simulate the soft body using the SDK simply click on the
+     button ‘Simulate Soft Body’</li>
+ <li class=MsoNormal>Use the right mouse button to drag the tetrahedral mesh
+     around the scene.</li>
+ <li class=MsoNormal>Click on the checkbox labeled ‘Show Tetrahedra’ so that it
+     is off.  This will show your original graphics mesh being deformed
+     relative to the simulated soft body.</li>
+ <li class=MsoNormal>You can tweak various soft body simulation settings such
+     as ‘volume’, ‘stretching’, and ‘damping’ in real time by modifying the
+     sliders. </li>
+ <li class=MsoNormal>You can toggle and tweak soft body flags by using the
+     ‘SoftBody Flags’ menu on the main menu bar.</li>
+ <li class=MsoNormal>You can toggle various forms of debug visualization by
+     using the ‘Debug Visualization’ menu on the main menu bar.  It is
+     important to be aware that enabling debug visualization disables
+     asynchronous behavior.</li>
+ <li class=MsoNormal>You can toggle asynchronous behavior on and off by selecting
+     the checkbox labeled ‘Asynchronous’.  When running asynchronously the
+     entire simulation of the soft body physics is run completely in parallel
+     to the graphics rendering which includes the real-time deformation which
+     is a client side graphics operation.  With asynchronous mode disabled
+     there is no parallelism and this can greatly impact the overall
+     performance of the system.</li>
+ <li class=MsoNormal>To return to editing mode simply select ‘Stop Simulation’</li>
+ <li class=MsoNormal>At any time you can export your results in one of three
+     file formats by using the main file menu.</li>
+ <ol style='margin-top:0in' start=1 type=a>
+  <li class=MsoNormal>Wavefront OBJ + TET : This will save out the results as a
+      graphics file and a separate tetrahedron file.  This is compatible with
+      the SDK sample ‘SampleSoftBody’.  None of the physical settings such as
+      ‘damping’ or the soft body flags will be saved.  The .TET file lists all
+      of the tetrahedrons as well as a list of links with barycentric
+      coordinates to the source graphics.  However, we strongly recommend you
+      do not try to use this and, instead, compute the barycentric coordinates on
+      the fly in your own graphics engine; either at load time or embedded into
+      your internal graphics mesh format.  </li>
+  <li class=MsoNormal>EZ-Mesh: EZ-Mesh is a very simplistic graphics file
+      format in XML.  It was designed to emulate the simplicity of a Wavefront
+      OBJ file but with additional support for hierarchal skeletons, per vertex
+      bone weightings, and animation data.  Currently no exporter exists for
+      this format but just as it is extremely simple to export Wavefront OBJ by
+      using a series of ‘fprintf’ statements, the same can be done for
+      EZ-mesh.  The EZ-Mesh contains both the graphics data as well as the
+      tetrahedral data in a single file.  The file can be loaded and processed
+      using the NxuStream library.</li>
+  <li class=MsoNormal>NxuStream: This is the recommended format for anyone
+      willing to adopt the NxuStream serialization library.  This file contains
+      the tetrahedral data as well as all of the physical parameters for the
+      soft body.  The soft body mesh contains a semantic binding to the
+      original graphics mesh by taking advantage of the ‘userProperties’ field.</li>
+ </ol>
+</ol>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal><b><u><span style='font-size:16.0pt'>The Media Files</span></u></b></p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal>Located in the folder “.\Samples\PhysXViewer\media” you will
+find a number of pieces of sample data that you can experiment with.  Many of
+the sample graphics files have been provided courtesy of Simutronics
+Corporation and are not for redistribution.  They may only be used as test
+data.</p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal><b><u>Wavefront OBJ Files:</u></b></p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal>beshon.obj                   : A sample graphic of a small
+creature.</p>
+
+<p class=MsoNormal>deer_bound.obj           : A sample graphic of a deer,
+sample art courtesy of Simutronics Corporation</p>
+
+<p class=MsoNormal>frogNormalized.obj     : A sample graphics file of a frog,
+used by other demo scripts.</p>
+
+<p class=MsoNormal>hornbug.obj                 : A sample graphic image of a
+large bug</p>
+
+<p class=MsoNormal>ob_chair_gothic.obj    : A sample graphic of a gothic style
+chair.</p>
+
+<p class=MsoNormal>ob_char_wood.obj      : A sample graphic of a simple wooden
+chair.</p>
+
+<p class=MsoNormal>palmNormalized.obj   : A graphic of a palm tree</p>
+
+<p class=MsoNormal>wheelNormalized.obj : A graphic of a wheel used by the car
+demo script.</p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal><b><u>EZ-Mesh graphics files:</u></b></p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal>beshon.ezm                 : An EZ-mesh graphics file that
+graphics data with embedded tetrahedral data.</p>
+
+<p class=MsoNormal>character.ezm  : An EZ-mesh graphics file for a Vietnam era solider that contains per vertex bone weightings and skeletal data.</p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal><b><u>Tetrahedral files (.TET)</u></b></p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal>beshon.tet                    : A tetrahedron file that maps
+to the beshon.obj graphics file.</p>
+
+<p class=MsoNormal>deer_bound.tet            : A tetrahedron file that maps to
+the deer_bound.obj graphics file.</p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal><b><u>NxuStream files (.XML)</u></b></p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal>beshon.xml                  : An NxuStream file that
+specifies the tetrahedral geometry relative to the ‘beshon.ezm’ graphics file.</p>
+
+<p class=MsoNormal>character.xml   : A skinned mesh model based on the skeletal
+deformed mesh ‘character.ezm’. (A rag doll)</p>
+
+<p class=MsoNormal>frogs.xml                    : A core dump file from
+SampleSoftBody and demonstrated with the demo script ‘frogs.psc’</p>
+
+<p class=MsoNormal>frogs_hw.xml              : A core dump file from
+SampleSoftBody and demonstrated with the demo script ‘frogs_hw.psc’ using
+HARDWARE</p>
+
+<p class=MsoNormal>hornbug.xml                : A skinned mesh (rag doll) based
+on the graphics mesh ‘hornbug.obj’.  The skinned mesh and skeleton were
+completely auto-generated.</p>
+
+<p class=MsoNormal>ob_chair_gothic.xml   : A skinned mesh based on the graphics
+mesh ‘ob_chair_gothic.obj’.  The skinned mesh and skeleton were completely
+auto-generated.</p>
+
+<p class=MsoNormal>ob_chair_wood.xml    : A skinned mesh based on the graphics
+mesh ‘ob_chair_wood.obj’.  The skinned mesh and skeleton were completely
+auto-generated</p>
+
+<p class=MsoNormal>ob_chess_table.xml   : A skinned mesh based on the graphics
+mesh ‘ob_chess_table.obj’.  The skinned mesh and skeleton were completely
+auto-generated</p>
+
+<p class=MsoNormal>palm_tree.xml : A core dump file from SampleSoftBody and
+demonstrated with the demo script ‘palm_tree.psc’</p>
+
+<p class=MsoNormal>soft_box_sphere.xml : A core dump file from SampleSoftBody</p>
+
+<p class=MsoNormal>softcar.xml                  : A core dump file from
+SampleSoftBody and demonstrated with the demo script ‘softcar.psc’</p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal><b><u>Demo Scripts (.PSC)</u></b></p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal>frogs.psc                      : Demonstrates the frog
+falling demo running in software.</p>
+
+<p class=MsoNormal>frogs_hw.psc               : Demonstrates the frog falling
+demo running in hardware</p>
+
+<p class=MsoNormal>palmtree.psc                : Demonstrates the palm tree
+demo.</p>
+
+<p class=MsoNormal>PhysXViewer.psc       : Not a demo script, this file saves
+the current user interface settings of PhysXViewer between sessions.</p>
+
+<p class=MsoNormal>softcar.psc                   : Demonstrates the car with
+soft wheels demo.</p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal><b><u><span style='font-size:14.0pt'>The SoftBody source
+code library.</span></u></b></p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal>Located in the ‘tools’ folder of the PhysX SDK is a source
+code library called ‘SoftBody’.  The goal of this effort was to provide
+sufficient source code to demonstrate how the soft body feature, including all
+editing functions, into a game engine.  This library is written in such a way
+that it could, theoretically, be dropped directly into an existing game engine
+and, after implementing a handful of pure virtual interfaces, would provide all
+of the functionality demonstrated in the PhysXViewer application.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The source code is meant primarily to act as sample code as
+a learning tool.  It is doubtful that it would ultimately be used in a final
+production implementation.  That said, it is quite likely that substantial
+portions of this code could, and should, be used directly or with slight
+modifications. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>This code is dependent upon the PhysX SDK and the NxuStream
+serialization library to build.  One single piece of source code has a dependency
+on the DirectX SDK, but it is implemented through a virtual interface such that
+it could easily be bound to other graphics engines.  There is a small amount of
+STL usage in the code.  It has only been compiled and tested against the
+Windows platform.  All of the source code is encapsulated in the namespace
+‘SOFTBODY’ to prevent clashing with any other source in your application.</p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal><b><u><span style='font-size:14.0pt'>Virtual Interfaces :
+TetraGraphics.h</span></u></b></p>
+
+<p class=MsoNormal><b><u><span style='font-size:14.0pt'><span style='text-decoration:
+ none'>&nbsp;</span></span></u></b></p>
+
+<p class=MsoNormal>The file ‘TetraGraphics.h’ in the SoftBody source library defines
+the various interfaces between the library and  your application.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The ‘SoftFileInterface’ provides utility services such as
+mapping a file name to an absolute path or reporting error messages.  It also
+assumes that the application owns and controls the PhysX simulations so it
+requests reset events and fetch results blocking calls through this interface.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>TetraGraphicsVertex   : Defines a general renderable
+graphics vertex.</p>
+
+<p class=MsoNormal>TetraDeformVertex    : Defines a generic graphics vertex
+with four bone weightings.</p>
+
+<p class=MsoNormal>TetraMaterial               : Defines a generic concept of a
+‘material’ with a texture name and lighting information.</p>
+
+<p class=MsoNormal>SoftMeshInterface      : Defines a generic interface to
+receive materials, triangles, and tetrahedron via the sample file loading code.</p>
+
+<p class=MsoNormal>TetraGraphicsInterface           : Defines a simple abstract
+interface for 3d graphics rendering.  One implementation is provided for
+DirectX, however, it could easily be remapped to other graphics APIs.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal><b><u><span style='font-size:16.0pt'>Integration Notes for
+Game Developers</span></u></b></p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal><b>Loading Wavefront OBJ files and TET files.</b></p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal>Wavefront OBJ files and their associated tetrahedral files
+can be loaded using ‘SoftMeshObj.h’ and ‘SoftMeshObj.cpp’.  The only dependency
+is on the SoftMeshInterface to receive the results.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>Loading EZ-Mesh files with embedded tetrahedral data.</b></p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal>EZ-Mesh files with embedded tetrahedral data can be loaded
+using ‘SoftMeshEZM.h’ and ‘SoftMeshEZM.cpp’.  The dependencies are
+‘SoftMeshInterface’ and the NxuStream library.  Recently NxuStream was revised
+to provide support for the EZ-mesh graphics file format.  While, currently,
+there are no exporters for this file format it is simple enough that any game
+developer should be able to export their skeletal deformed mesh content with
+just a series of ‘fprintf’ statements.  A 3DS Max exporter based on the IGameExporter
+might be provided at some point in the future.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>Rendering Graphics meshes based on a soft body
+simulation.</b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The SDK simulates soft bodies as tetrahedral meshes. 
+However, this is rarely what you want to show up on the graphics screen. 
+Instead you want to map the tetrahedral simulation to your graphics mesh to
+create a convincing visual effect.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The technique required to do this is called ‘free-form
+deformation’.  It is a form of ‘skinning’ where each vertex, instead of being
+assigned to a particular bone in a rigid body simulation, is mapped to a
+specific tetrahedron.  To perform the per-vertex deformation requires a set of
+barycentric co-ordinates for each vertex.  In the provided sample application
+these barycentric co-ordinates are computed on the fly at load time and stored
+into each vertex.  For a full game integration this data might best be
+precomputed and embedded into your mesh files on disk.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The code to compute the barycentric co-ordinates is dependent
+on ‘MeshHash.h’ and ‘MeshHash.cpp’.  This utility source code places the
+bounding box of each tetrahedron into a hash table to speed up the building
+phase.  To compute the barycentric co-ordinates the closest tetrahedron must be
+found for each vertex.  The code that performs this action is located in
+‘TetraMesh.cpp’ in the method ‘TetraMesh::buildLinks’ (around line number 830).</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>This implementation is a little bit more complicated than
+what you might use in your own engine since it works in concert with the
+tetrahedral editor and masks out tetrahedra that have been marked for deletion.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The same basic code can also be found in the SampleSoftBody
+demo.  This is code that a graphics programmer will have to incorporate into
+their own graphics engine to support the soft body visualization.  Since the
+PhysX SDK is spending its time computing the physics solution the graphics
+rendering pipeline, independently, must compute the graphics solution.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The actual deformation code at run-time is extremely simple. 
+It can be found in ‘TetraMesh::applyLinks’ at roughly line number 262.  The
+computation to deform a single vertex is simply:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>NxVec3 p = p0*b.x + p1*b.y + p2.*b.z +
+p3*(1.0f-b.x-b.y-b.z);</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Where p0, p1, p2, and p3 represent the positions of the
+tetrahedron and ‘b’ represents the pre-computed barycentric co-ordinate.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Since this computation is so fast it is difficult to see how
+to get a performance gain by pushing it into a vertex shader, however, with
+DirectX 10 it is quite possible a highly efficient shader could be implemented
+but it is hard to see how to do this with DirectX 9 class hardware.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>Integrating the entire SoftBodySytem</b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The source code library has a single major application
+interface called the ‘SoftBodySystem’.  The header file is ‘SoftBodySystem.h’
+and the implementation is in ‘SoftBodySystem.cpp’.  This implementation
+contains not only the functionality to load soft body meshes, simulate, and
+render them, but also includes all of the editing features of PhysXViewer. 
+Simply by hooking up the call to ‘processCommand’ a game editor could easily
+duplicate all of the functionality in PhysXViewer directly into their own
+in-house tool.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>It is important to remember that this is merely ‘sample’
+code.  It will almost always need to be modified to meet the needs of a
+specific engine and for certain enhanced to meet the specific needs of your
+product.  Feel free to peruse the code and step through it as a learning
+exercise.  The code is not yet documented but will be improved in future
+releases.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>The File List</b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Here is a list of the source files in the SoftBody library
+and their purpose.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><u>MeshHash.cpp and MeshHash.h</u>        : A utility to
+place bounding volumes into a 3d hash table for high speed queries.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><u>NxMouseDrag.cpp and NxMouseDrag.h</u> : A generic utility
+to support mouse dragging for soft bodies, cloth, and rigid bodies.  This
+source has no dependencies other than the SDK and can be extracted and used
+directly in your own PhysX applications.  The only input it needs is the PhysX
+SDK pointer, optional scene pointer, the width of the graphics screen, the
+height of the graphics screen, the view and projection matrix and the delta
+frame time.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><u>NxTetra.h</u>                                : Defines
+the pure virtual interface to the tetrahedral generation tool.  The source code
+that actually converts graphics meshes to tetrahedral geometry is not provided
+with this release as it is considered propriety intellectual property of
+Ageia.  The functionality has been placed into the provided DLL ‘NxTetra.dll’
+that can dynamically loaded by your application.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><u>SkinnedMesh.cpp and SkinnedMesh.h</u>          : Handles
+loading an asset that is comprised of a collection of physics objects,
+instantiating them, and rendering them.  This includes a full working example
+of skinned mesh rag dolls as well as source to auto-generate a skeleton and per
+vertex bone weightings from an arbitrary collection of rigid body actors mapped
+to an arbitrary graphics mesh.  </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><u>SoftBody.cpp and SoftBody.h</u>          : Contains the
+main ‘factory’ for the soft body simulation and editor.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><u>SoftBodyMath.cpp and SoftBodyMath.h</u>     :  Provides a
+few generic useful math functions such as ray triangle intersection.  Used for
+raycasting when editing the tetrahedral mesh.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><u>SoftMesh.cpp and SoftMesh.h           </u>            : A
+simple and generic mesh class which handles either skeletal deformed meshes or
+static meshes.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><u>SoftMeshEZM.cpp and SoftMeshEZM.h</u>      : Loads a
+graphics mesh and tetrahedrons.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><u>SoftMeshObj.cpp and SoftMeshObj.h</u>                       :
+Loads Wavefront OBJ files and the corresponding .TET file with tetrahedral
+data.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><u>SoftServe.cpp and SoftServe.h</u>                      :
+Contains utility source code to export the edited soft body in the three supported file formats.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><u>SoftSkeleton.cpp and SoftSkeleton.h</u>            : 
+Utility code to auto-generate the graphics transforms for a skeleton mapped to
+a set of rigid body actors.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><u>SoftVertex.cpp and SoftVertex.h</u>      : Utility code
+to build indexed triangle lists of vertices.  This is the only source file to
+use the STL.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><u>TetraD3D.cpp and TetraD3D.h</u>          : The DirectX
+implementation of the TetraGraphicsInterface.  By replacing this with an
+implantation of your own you could, theoretically, bind this entire library
+directly to your own graphics engine.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><u>TetraGraphics.cpp and TetraGraphics.</u>h : Defines the
+pure virtual interfaces and graphics structures for rendering.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><u>TetraMesh.cpp and TetraMesh.h</u>        : Handles
+management, editing, and rendering of tetrahedral and corresponding graphics
+meshes.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt'>CreateDynamics</span></b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The last button on the PhysXViewer application in labeled
+‘dynamics page’.  This shows how the PhysXViewer application binds to the
+utility plug-in DLL called ‘CreateDynamics.dll’.  This tool is designed to
+assist developers by automatically generating physics content directly from
+graphics data based on a set of sliders and checkboxes that an artist or
+designer can control.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>Guide on how to make Ragdoll</b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Ragdoll is a common usage of PhysX in games etc. 
+PhysXViewer can not directly make Ragdoll. In fact, it helps user to transfer
+their Ragdoll mesh from Max, Maya or XSI to PhysX model. Here is the guide.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-top:6.0pt;margin-right:0in;
+margin-bottom:6.0pt;margin-left:.5in;text-indent:-.25in'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>User
+needs install Unreal ActorX first</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:6.0pt;margin-right:0in;
+margin-bottom:6.0pt;margin-left:.25in'>ActorX is a mesh exporting tool plugin
+for Max, Maya and XSI. It is developed by Epic. User can download it from the
+following page, <a href="http://udn.epicgames.com/Two/ActorX.html">http://udn.epicgames.com/Two/ActorX.html</a>. 
+</p>
+
+<p class=MsoListParagraphCxSpLast style='margin-top:6.0pt;margin-right:0in;
+margin-bottom:6.0pt;margin-left:.5in;text-indent:-.25in'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Export
+Ragdoll model to PSK file using ActorX</p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;
+margin-left:.25in'>For the step, user can get help at the following page: <a
+href="http://udn.epicgames.com/Two/ActorXMaxTutorial.html">http://udn.epicgames.com/Two/ActorXMaxTutorial.html</a>
+</p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-top:6.0pt;margin-right:0in;
+margin-bottom:6.0pt;margin-left:.5in;text-indent:-.25in'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Run
+PhysXViewer and press 'p' to pause physX simulation</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:6.0pt;margin-right:0in;
+margin-bottom:6.0pt;margin-left:.5in;text-indent:-.25in'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Open
+the PSK file through menu item File -&gt; 'Import Graphics Unreal PSK'</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-top:6.0pt;margin-right:0in;
+margin-bottom:6.0pt;margin-left:.5in;text-indent:-.25in'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Click
+button 'Dynamics Page'</p>
+
+<p class=MsoListParagraphCxSpLast style='margin-top:6.0pt;margin-right:0in;
+margin-bottom:6.0pt;margin-left:.5in;text-indent:-.25in'>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Click
+button 'Create Dynamics'. </p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;
+margin-left:.25in'>Now, PhysXViewer begins the conversion. And it will save a
+corresponding xml file at the same path of PhysXViewer. This xml file is in
+PhysX NxuStream format and users can use NxuStream2 codes to load it.</p>
+
+<p class=MsoListParagraph style='margin-top:6.0pt;margin-right:0in;margin-bottom:
+6.0pt;margin-left:.5in;text-indent:-.25in'>7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Press 'b' to view the model after conversion.</p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:6.0pt;
+margin-left:0in'>Note:</p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-top:6.0pt;margin-right:0in;
+margin-bottom:6.0pt;margin-left:.5in;text-indent:-.25in'>a.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>After
+the conversion, the model size changes a lot because PhysX uses a different
+measurement unit. </p>
+
+<p class=MsoListParagraphCxSpLast style='margin-top:6.0pt;margin-right:0in;
+margin-bottom:6.0pt;margin-left:.5in;text-indent:-.25in'>b.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>The
+exported XML file can be loaded to PhysXViewer for review and remember to press
+‘b’ if it is not shown there.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt'>Notes</span></b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>This project is incomplete, undocumented, and highly
+experimental.  The demos of the soldier character as well as the skinned mesh
+chairs were created with this tool.  It can perform convex decomposition on a
+generic mesh and convert skeletal deformed meshes into approximate rag dolls.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>This project was created and is maintained by John W.
+Ratcliff (mailto: <a href="mailto:jratcliff@infiniplex.net">jratcliff@infiniplex.net</a>). 
+John will be presenting this project formally at GDC 2007 in a 60 minute talk
+and intends to be able to release the full source code, with documentation as well
+as many improvements in algorithms and stability at that time.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

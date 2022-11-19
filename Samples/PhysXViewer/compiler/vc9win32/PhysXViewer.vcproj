@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+ProjectType="Visual C++"
+Version="9.00"
+Name="PhysXViewer"
+>
+<Platforms>
+<Platform Name="Win32"/>
+</Platforms>
+<Configurations>
+  <Configuration
+    Name="default|Win32"
+    OutputDirectory="$(SolutionDir)/out"
+    IntermediateDirectory="Win32/PhysXViewer/default"
+    ConfigurationType="1"
+    InheritedPropertySheets=""
+    CharacterSet="2"
+    >
+    <Tool
+      Name="VCCLCompilerTool"
+      AdditionalIncludeDirectories="&quot;../../src&quot;;&quot;../../src/tui&quot;;&quot;../../src/common&quot;;&quot;../../src/globals&quot;;&quot;../../src&quot;;&quot;../../src/tui&quot;;&quot;../../src/common&quot;;&quot;../../src/globals&quot;;"
+      PreprocessorDefinitions="WIN32;_WINDOWS;UNICODE=1;_CRT_SECURE_NO_DEPRECATE;WIN32;_WINDOWS;UNICODE=1;_CRT_SECURE_NO_DEPRECATE;"
+      WarningLevel="3"
+      Optimization="4"
+      AdditionalOptions="/wd4996 /wd4996 "
+      ExceptionHandling="1"
+      DebugInformationFormat=""
+      RuntimeLibrary=""
+      />
+    <Tool Name="VCCustomBuildTool"/>
+    <Tool 
+      Name="VCLinkerTool" 
+      OutputFile="$(OutDir)/.exe" 
+      ProgramDatabaseFile="$(OutDir)/.exe.pdb" 
+      AdditionalOptions="/NODEFAULTLIB:libcp.lib /NODEFAULTLIB:libcp.lib "
+      AdditionalDependencies="&quot;odbc32.lib&quot; &quot;odbccp32.lib&quot; &quot;winmm.lib&quot; &quot;comctl32.lib&quot; &quot;pdh.lib&quot; &quot;shlwapi.lib&quot; &quot;OpenGL32.lib&quot; &quot;GLU32.lib&quot; &quot;Ws2_32.lib&quot; &quot;dbghelp.lib&quot; &quot;d3d9.lib&quot; &quot;d3dx9.lib&quot; &quot;dxerr9.lib&quot; &quot;dxguid.lib&quot; &quot;dinput8.lib&quot; &quot;dsound.lib&quot; &quot;odbc32.lib&quot; &quot;odbccp32.lib&quot; &quot;winmm.lib&quot; &quot;comctl32.lib&quot; &quot;pdh.lib&quot; &quot;shlwapi.lib&quot; &quot;OpenGL32.lib&quot; &quot;GLU32.lib&quot; &quot;Ws2_32.lib&quot; &quot;dbghelp.lib&quot; &quot;d3d9.lib&quot; &quot;d3dx9.lib&quot; &quot;dxerr9.lib&quot; &quot;dxguid.lib&quot; &quot;dinput8.lib&quot; &quot;dsound.lib&quot; "
+      AdditionalLibraryDirectories=""
+      ImportLibrary="$(OutDir)/$(TargetName).lib"
+      GenerateMapFile="TRUE"
+      MapFileName="$(OutDir)/.exe.map"
+      SubSystem="2"
+      GenerateDebugInformation=""
+      />
+    <Tool Name="VCMIDLTool"/>
+    <Tool Name="VCPreBuildEventTool"/>
+    <Tool Name="VCPostBuildEventTool"/>
+    <Tool Name="VCPreLinkEventTool"/>
+    <Tool Name="VCResourceCompilerTool"/>
+    <Tool Name="VCWebServiceProxyGeneratorTool"/>
+    <Tool Name="VCXMLDataGeneratorTool"/>
+    <Tool Name="VCWebDeploymentTool"/>
+    <Tool Name="VCManagedWrapperGeneratorTool"/>
+    <Tool Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+  </Configuration>
+  <Configuration
+    Name="debug|Win32"
+    OutputDirectory="../../../../bin/win32"
+    IntermediateDirectory="Win32/PhysXViewer/debug"
+    ConfigurationType="1"
+    InheritedPropertySheets=""
+    CharacterSet="2"
+    >
+    <Tool
+      Name="VCCLCompilerTool"
+      AdditionalIncludeDirectories="&quot;../../src&quot;;&quot;../../src/tui&quot;;&quot;../../src/common&quot;;&quot;../../src/globals&quot;;&quot;../../../../SDKs&quot;;&quot;../../../../SDKs/cooking/include&quot;;&quot;../../../../SDKs/foundation/include&quot;;&quot;../../../../SDKs/NxCharacter/include&quot;;&quot;../../../../SDKs/physics/include&quot;;&quot;../../../../SDKs/PhysXLoader/include&quot;;&quot;../../../../Externals/dx9/include&quot;;&quot;$(DXSDK_DIR)/Include&quot;;&quot;../../../../Tools/NxuStream2/&quot;;&quot;../../../../Tools/SoftBody/&quot;;"
+      PreprocessorDefinitions="WIN32;_WINDOWS;UNICODE=1;_CRT_SECURE_NO_DEPRECATE;_DEBUG;TRUNK;"
+      WarningLevel="3"
+      Optimization="4"
+      AdditionalOptions="/wd4996 /Zi "
+      ExceptionHandling="1"
+      DebugInformationFormat=""
+      RuntimeLibrary="1"
+      />
+    <Tool Name="VCCustomBuildTool"/>
+    <Tool 
+      Name="VCLinkerTool" 
+      OutputFile="$(OutDir)/PhysXViewerDEBUG.exe" 
+      ProgramDatabaseFile="$(OutDir)/PhysXViewerDEBUG.exe.pdb" 
+      AdditionalOptions="/NODEFAULTLIB:libcp.lib /DEBUG "
+      AdditionalDependencies="&quot;odbc32.lib&quot; &quot;odbccp32.lib&quot; &quot;winmm.lib&quot; &quot;comctl32.lib&quot; &quot;pdh.lib&quot; &quot;shlwapi.lib&quot; &quot;OpenGL32.lib&quot; &quot;GLU32.lib&quot; &quot;Ws2_32.lib&quot; &quot;dbghelp.lib&quot; &quot;d3d9.lib&quot; &quot;d3dx9.lib&quot; &quot;dxerr9.lib&quot; &quot;dxguid.lib&quot; &quot;dinput8.lib&quot; &quot;dsound.lib&quot; &quot;PhysXLoader.lib&quot; "
+      AdditionalLibraryDirectories="&quot;../../../../SDKs/lib/win32&quot;;&quot;../../../../Externals/dx9/lib/x86&quot;;&quot;$(DXSDK_DIR)\Lib\x86&quot;;"
+      ImportLibrary="$(OutDir)/$(TargetName).lib"
+      GenerateMapFile="TRUE"
+      MapFileName="$(OutDir)/PhysXViewerDEBUG.exe.map"
+      SubSystem="2"
+      GenerateDebugInformation=""
+      />
+    <Tool Name="VCMIDLTool"/>
+    <Tool Name="VCPreBuildEventTool"/>
+    <Tool Name="VCPostBuildEventTool"/>
+    <Tool Name="VCPreLinkEventTool"/>
+    <Tool Name="VCResourceCompilerTool"/>
+    <Tool Name="VCWebServiceProxyGeneratorTool"/>
+    <Tool Name="VCXMLDataGeneratorTool"/>
+    <Tool Name="VCWebDeploymentTool"/>
+    <Tool Name="VCManagedWrapperGeneratorTool"/>
+    <Tool Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+  </Configuration>
+  <Configuration
+    Name="release|Win32"
+    OutputDirectory="../../../../bin/win32"
+    IntermediateDirectory="Win32/PhysXViewer/release"
+    ConfigurationType="1"
+    InheritedPropertySheets=""
+    CharacterSet="2"
+    >
+    <Tool
+      Name="VCCLCompilerTool"
+      AdditionalIncludeDirectories="&quot;../../src&quot;;&quot;../../src/tui&quot;;&quot;../../src/common&quot;;&quot;../../src/globals&quot;;&quot;../../../../SDKs&quot;;&quot;../../../../SDKs/cooking/include&quot;;&quot;../../../../SDKs/foundation/include&quot;;&quot;../../../../SDKs/NxCharacter/include&quot;;&quot;../../../../SDKs/physics/include&quot;;&quot;../../../../SDKs/PhysXLoader/include&quot;;&quot;../../../../Externals/dx9/include&quot;;&quot;$(DXSDK_DIR)/Include&quot;;&quot;../../../../Tools/NxuStream2/&quot;;&quot;../../../../Tools/SoftBody/&quot;;"
+      PreprocessorDefinitions="WIN32;_WINDOWS;UNICODE=1;_CRT_SECURE_NO_DEPRECATE;NDEBUG;TRUNK;"
+      WarningLevel="3"
+      Optimization="4"
+      AdditionalOptions="/wd4996 /O2 "
+      ExceptionHandling="1"
+      DebugInformationFormat=""
+      RuntimeLibrary="0"
+      />
+    <Tool Name="VCCustomBuildTool"/>
+    <Tool 
+      Name="VCLinkerTool" 
+      OutputFile="$(OutDir)/PhysXViewer.exe" 
+      ProgramDatabaseFile="$(OutDir)/PhysXViewer.exe.pdb" 
+      AdditionalOptions="/NODEFAULTLIB:libcp.lib "
+      AdditionalDependencies="&quot;odbc32.lib&quot; &quot;odbccp32.lib&quot; &quot;winmm.lib&quot; &quot;comctl32.lib&quot; &quot;pdh.lib&quot; &quot;shlwapi.lib&quot; &quot;OpenGL32.lib&quot; &quot;GLU32.lib&quot; &quot;Ws2_32.lib&quot; &quot;dbghelp.lib&quot; &quot;d3d9.lib&quot; &quot;d3dx9.lib&quot; &quot;dxerr9.lib&quot; &quot;dxguid.lib&quot; &quot;dinput8.lib&quot; &quot;dsound.lib&quot; &quot;PhysXLoader.lib&quot; "
+      AdditionalLibraryDirectories="&quot;../../../../SDKs/lib/win32&quot;;&quot;../../../../Externals/dx9/lib/x86&quot;;&quot;$(DXSDK_DIR)\Lib\x86&quot;;"
+      ImportLibrary="$(OutDir)/$(TargetName).lib"
+      GenerateMapFile="TRUE"
+      MapFileName="$(OutDir)/PhysXViewer.exe.map"
+      SubSystem="2"
+      GenerateDebugInformation=""
+      />
+    <Tool Name="VCMIDLTool"/>
+    <Tool Name="VCPreBuildEventTool"/>
+    <Tool Name="VCPostBuildEventTool"/>
+    <Tool Name="VCPreLinkEventTool"/>
+    <Tool Name="VCResourceCompilerTool"/>
+    <Tool Name="VCWebServiceProxyGeneratorTool"/>
+    <Tool Name="VCXMLDataGeneratorTool"/>
+    <Tool Name="VCWebDeploymentTool"/>
+    <Tool Name="VCManagedWrapperGeneratorTool"/>
+    <Tool Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+  </Configuration>
+</Configurations>
+<References></References>
+<Files>
+  <Filter Name="Resources" Filter=""> <!--  -->
+    <File RelativePath="..\..\src\SampleSoftBodyD3D.rc"/>
+  </Filter>
+  <Filter Name="Header Files" Filter=""> <!--  -->
+    <Filter Name="tui" Filter=""> <!--  -->
+      <File RelativePath="..\..\src\tui\cparser.h"/>
+      <File RelativePath="..\..\src\tui\filesystem.h"/>
+      <File RelativePath="..\..\src\tui\GuiTui.h"/>
+      <File RelativePath="..\..\src\tui\inparser.h"/>
+      <File RelativePath="..\..\src\tui\log.h"/>
+      <File RelativePath="..\..\src\tui\stable.h"/>
+      <File RelativePath="..\..\src\tui\stl.h"/>
+      <File RelativePath="..\..\src\tui\stringdict.h"/>
+      <File RelativePath="..\..\src\tui\sutil.h"/>
+      <File RelativePath="..\..\src\tui\tui.h"/>
+    </Filter>
+    <Filter Name="common" Filter=""> <!--  -->
+      <File RelativePath="..\..\src\common\dxstdafx.h"/>
+      <File RelativePath="..\..\src\common\DXUT.h"/>
+      <File RelativePath="..\..\src\common\DXUTenum.h"/>
+      <File RelativePath="..\..\src\common\DXUTgui.h"/>
+      <File RelativePath="..\..\src\common\DXUTMesh.h"/>
+      <File RelativePath="..\..\src\common\DXUTmisc.h"/>
+      <File RelativePath="..\..\src\common\DXUTRes.h"/>
+      <File RelativePath="..\..\src\common\DXUTSettingsDlg.h"/>
+      <File RelativePath="..\..\src\common\DXUTsound.h"/>
+    </Filter>
+    <File RelativePath="..\..\src\CreateDynamics.h"/>
+    <File RelativePath="..\..\src\menu.h"/>
+    <File RelativePath="..\..\src\PhysX.h"/>
+    <File RelativePath="..\..\src\physxviewer.h"/>
+    <File RelativePath="..\..\src\resource.h"/>
+  </Filter>
+  <Filter Name="Source Files" Filter=""> <!--  -->
+    <Filter Name="tui" Filter=""> <!--  -->
+      <File RelativePath="..\..\src\tui\cparser.cpp"/>
+      <File RelativePath="..\..\src\tui\filesystem.cpp"/>
+      <File RelativePath="..\..\src\tui\GuiTui.cpp"/>
+      <File RelativePath="..\..\src\tui\inparser.cpp"/>
+      <File RelativePath="..\..\src\tui\log.cpp"/>
+      <File RelativePath="..\..\src\tui\stringdict.cpp"/>
+      <File RelativePath="..\..\src\tui\sutil.cpp"/>
+      <File RelativePath="..\..\src\tui\tui.cpp"/>
+    </Filter>
+    <Filter Name="common" Filter=""> <!--  -->
+      <File RelativePath="..\..\src\common\dxstdafx.cpp"/>
+      <File RelativePath="..\..\src\common\DXUT.cpp"/>
+      <File RelativePath="..\..\src\common\DXUTenum.cpp"/>
+      <File RelativePath="..\..\src\common\DXUTgui.cpp"/>
+      <File RelativePath="..\..\src\common\DXUTMesh.cpp"/>
+      <File RelativePath="..\..\src\common\DXUTmisc.cpp"/>
+      <File RelativePath="..\..\src\common\DXUTRes.cpp"/>
+      <File RelativePath="..\..\src\common\DXUTSettingsDlg.cpp"/>
+      <File RelativePath="..\..\src\common\DXUTsound.cpp"/>
+    </Filter>
+    <File RelativePath="..\..\src\menu.cpp"/>
+    <File RelativePath="..\..\src\PhysX.cpp"/>
+    <File RelativePath="..\..\src\PhysXViewer.cpp"/>
+  </Filter>
+  <Filter Name="Source Library Header Files" Filter=""> <!--  -->
+    <Filter Name="NxuStream2" Filter=""> <!--  -->
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_Asc2Bin.h"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_ColladaExport.h"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_ColladaImport.h"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_cooking.h"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_customcopy.h"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_File.h"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_Geometry.h"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_GraphicsMesh.h"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_helper.h"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_hull.h"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_PhysicsExport.h"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_PhysicsInstantiator.h"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_ScaledCopy.h"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_schema.h"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_SchemaStream.h"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_SchemaTypes.h"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_Streaming.h"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_string.h"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_tinystr.h"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_tinyxml.h"/>
+    </Filter>
+    <Filter Name="SoftBody" Filter=""> <!--  -->
+      <File RelativePath="..\..\..\..\Tools\SoftBody\MeshHash.h"/>
+      <File RelativePath="..\..\..\..\Tools\SoftBody\NxMouseDrag.h"/>
+      <File RelativePath="..\..\..\..\Tools\SoftBody\NxTetra.h"/>
+      <File RelativePath="..\..\..\..\Tools\SoftBody\SkinnedMesh.h"/>
+      <File RelativePath="..\..\..\..\Tools\SoftBody\SoftBody.h"/>
+      <File RelativePath="..\..\..\..\Tools\SoftBody\SoftBodyMath.h"/>
+      <File RelativePath="..\..\..\..\Tools\SoftBody\SoftMesh.h"/>
+      <File RelativePath="..\..\..\..\Tools\SoftBody\SoftMeshEZM.h"/>
+      <File RelativePath="..\..\..\..\Tools\SoftBody\SoftMeshObj.h"/>
+      <File RelativePath="..\..\..\..\Tools\SoftBody\SoftMeshPSK.h"/>
+      <File RelativePath="..\..\..\..\Tools\SoftBody\SoftServe.h"/>
+      <File RelativePath="..\..\..\..\Tools\SoftBody\SoftSkeleton.h"/>
+      <File RelativePath="..\..\..\..\Tools\SoftBody\SoftVertex.h"/>
+      <File RelativePath="..\..\..\..\Tools\SoftBody\TetraD3D.h"/>
+      <File RelativePath="..\..\..\..\Tools\SoftBody\TetraGraphics.h"/>
+      <File RelativePath="..\..\..\..\Tools\SoftBody\TetraMesh.h"/>
+    </Filter>
+  </Filter>
+  <Filter Name="Source Library Files" Filter=""> <!--  -->
+    <Filter Name="NxuStream2" Filter=""> <!--  -->
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_Asc2Bin.cpp"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_ColladaExport.cpp"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_ColladaImport.cpp"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_cooking.cpp"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_customcopy.cpp"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_File.cpp"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_Geometry.cpp"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_GraphicsMesh.cpp"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_helper.cpp"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_hull.cpp"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_PhysicsExport.cpp"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_PhysicsInstantiator.cpp"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_ScaledCopy.cpp"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_schema.cpp"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_SchemaStream.cpp"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_Streaming.cpp"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_string.cpp"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_tinystr.cpp"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_tinyxml.cpp"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_tinyxmlerror.cpp"/>
+      <File RelativePath="..\..\..\..\Tools\NxuStream2\NXU_tinyxmlparser.cpp"/>
+    </Filter>
+    <Filter Name="SoftBody" Filter=""> <!--  -->
+      <File RelativePath="..\..\..\..\Tools\SoftBody\MeshHash.cpp"/>
+      <File RelativePath="..\..\..\..\Tools\SoftBody\NxMouseDrag.cpp"/>
+      <File RelativePath="..\..\..\..\Tools\SoftBody\SkinnedMesh.cpp"/>
+      <File RelativePath="..\..\..\..\Tools\SoftBody\SoftBody.cpp"/>
+      <File RelativePath="..\..\..\..\Tools\SoftBody\SoftBodyMath.cpp"/>
+      <File RelativePath="..\..\..\..\Tools\SoftBody\SoftMesh.cpp"/>
+      <File RelativePath="..\..\..\..\Tools\SoftBody\SoftMeshEZM.cpp"/>
+      <File RelativePath="..\..\..\..\Tools\SoftBody\SoftMeshObj.cpp"/>
+      <File RelativePath="..\..\..\..\Tools\SoftBody\SoftMeshPSK.cpp"/>
+      <File RelativePath="..\..\..\..\Tools\SoftBody\SoftServe.cpp"/>
+      <File RelativePath="..\..\..\..\Tools\SoftBody\SoftSkeleton.cpp"/>
+      <File RelativePath="..\..\..\..\Tools\SoftBody\SoftVertex.cpp"/>
+      <File RelativePath="..\..\..\..\Tools\SoftBody\TetraD3D.cpp"/>
+      <File RelativePath="..\..\..\..\Tools\SoftBody\TetraGraphics.cpp"/>
+      <File RelativePath="..\..\..\..\Tools\SoftBody\TetraMesh.cpp"/>
+    </Filter>
+  </Filter>
+  <Filter Name="Globals" Filter=""> <!--  -->
+    <File RelativePath="..\..\src\globals\MyGlobals.h"/>
+    <File RelativePath="..\..\src\globals\MyGlobals.cpp"/>
+  </Filter>
+</Files>
+<Globals></Globals>
+</VisualStudioProject>

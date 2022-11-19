@@ -1,0 +1,1435 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <NXUSTREAM2>
+    <NxuPhysicsCollection id="ob_chair_wood" sdkVersion="244" nxuVersion="100">
+      <NxPhysicsSDKDesc id="SDK">
+        <hwPageSize>65536</hwPageSize>
+        <hwPageMax>256</hwPageMax>
+        <hwConvexMax>2048</hwConvexMax>
+      </NxPhysicsSDKDesc>
+  <NxConvexMeshDesc id="ob_chair_wood.obj_1">
+    <points>
+    -0.131866977 0.162137926 0.031571507   -0.070683673 -0.162137821 0.031571507   -0.070683673 0.162137896 0.031571507   0.131866992 0.162137926 -0.014129937   
+    -0.131866947 0.162137896 -0.031571478   -0.131866947 -0.162137821 -0.031571478   -0.131866977 -0.162137881 0.031571507   -0.070683643 -0.162137821 -0.031571478   
+    0.131866992 0.162137926 0.011391044   -0.070683658 0.162137926 -0.031571478   0.131866992 0.160218239 -0.013961494   
+    </points>
+    <triangles>
+    0 1 2  3 0 2  4 5 0  4 0 3  6 0 5  6 5 1  6 1 0  7 5 4  
+    7 1 5  8 2 1  8 3 2  9 4 3  9 3 7  9 7 4  10 3 8  10 8 1  
+    10 1 7  10 7 3  
+    </triangles>
+  </NxConvexMeshDesc>
+  <NxConvexMeshDesc id="ob_chair_wood.obj_2">
+    <points>
+    0.131866992 0.162137941 -0.031571478   0.131866992 0.162137911 0.031571507   0.131866992 -0.162137836 0.031571507   -0.131866992 0.162137911 0.011391044   
+    0.131867021 -0.162137836 -0.031571478   0.070683703 -0.162137836 -0.031571478   0.070683673 -0.162137896 0.031571507   -0.131866992 0.162137911 -0.014129937   
+    0.070683658 0.162137911 0.031571507   0.070683673 0.162137911 -0.031571478   -0.131866992 0.160218254 -0.013961494   
+    </points>
+    <triangles>
+    0 1 2  0 3 1  4 2 5  4 5 0  4 0 2  6 2 1  6 5 2  7 3 0  
+    8 1 3  8 3 6  8 6 1  9 0 5  9 5 7  9 7 0  10 3 7  10 7 5  
+    10 5 6  10 6 3  
+    </triangles>
+  </NxConvexMeshDesc>
+  <NxConvexMeshDesc id="ob_chair_wood.obj_3">
+    <points>
+    -0.13185887 0.167191416 0.031571463   -0.070675552 -0.167191327 0.031571463   -0.070675552 0.167191386 0.031571463   0.131858885 0.167191416 -0.020112455   
+    -0.131858841 0.167191386 -0.031571478   -0.131858781 -0.167191327 -0.031571478   -0.13185887 -0.167191371 0.031571433   -0.070675537 -0.167191327 -0.031571478   
+    0.131858885 0.157930285 0.017467439   0.131858885 0.167191416 0.016654521   0.131858885 0.155164719 -0.019056886   -0.070675552 0.167191416 -0.031571478   
+    </points>
+    <triangles>
+    0 1 2  3 0 2  4 5 0  4 0 3  6 0 5  6 5 1  6 1 0  7 5 4  
+    7 1 5  8 2 1  9 3 2  9 2 8  9 8 3  10 7 3  10 3 8  10 1 7  
+    10 8 1  11 4 3  11 3 7  11 7 4  
+    </triangles>
+  </NxConvexMeshDesc>
+  <NxConvexMeshDesc id="ob_chair_wood.obj_4">
+    <points>
+    0.13185887 0.167191446 -0.031571448   0.1318589 0.167191446 0.031571478   0.1318589 -0.167191371 0.031571478   0.1318589 -0.167191371 -0.031571448   
+    0.070675641 -0.167191371 -0.031571478   0.070675597 -0.167191416 0.031571448   -0.13185887 0.167191386 -0.020112485   -0.13185887 0.167191386 0.016654536   
+    -0.13185887 0.157930255 0.017467424   -0.13185887 0.155164719 -0.019056886   0.070675567 0.167191446 0.031571478   0.070675611 0.167191386 -0.031571448   
+    </points>
+    <triangles>
+    0 1 2  3 2 4  3 4 0  3 0 2  5 2 1  5 4 2  6 1 0  7 1 6  
+    7 6 8  9 8 6  9 6 4  9 4 5  9 5 8  10 1 7  10 7 8  10 8 5  
+    10 5 1  11 0 4  11 4 6  11 6 0  
+    </triangles>
+  </NxConvexMeshDesc>
+  <NxConvexMeshDesc id="ob_chair_wood.obj_5">
+    <points>
+    0.142689317 0.344205856 0.000167966   0.142689407 -0.342256188 0.055608928   0.142689407 -0.344205737 0.000029027   0.142689317 0.33803153 -0.055608928   
+    0.060671285 0.33803153 -0.055608928   0.060671315 -0.342256188 0.055608928   -0.142689377 0.309369802 -0.042915761   -0.142689377 -0.162405193 -0.004365861   
+    -0.142689377 0.312135458 -0.006391436   -0.142689377 -0.159639537 0.032158434   0.060671315 -0.344205737 0.000029027   0.060671285 0.344205856 0.000167966   
+    </points>
+    <triangles>
+    0 1 2  3 2 4  3 4 0  3 0 2  5 1 0  5 2 1  6 7 8  9 8 7  
+    9 7 5  10 7 6  10 6 4  10 2 5  10 5 7  10 4 2  11 8 9  11 9 5  
+    11 4 6  11 6 8  11 5 0  11 0 4  
+    </triangles>
+  </NxConvexMeshDesc>
+  <NxConvexMeshDesc id="ob_chair_wood.obj_6">
+    <points>
+    -0.142689407 -0.340486765 0.055466011   -0.0606713 -0.342436373 -0.000116676   -0.0606713 -0.340486765 0.055466011   0.142689422 -0.160625637 -0.004222929   
+    -0.142689347 0.342436433 0.000310868   -0.142689317 0.336261988 -0.055466026   -0.142689407 -0.342436373 -0.000116676   0.142689422 0.31114924 -0.042772859   
+    0.142689422 0.313914895 -0.006248623   0.142689422 -0.157859981 0.032301307   -0.060671225 0.342436433 0.000310898   -0.060671225 0.336261988 -0.055466026   
+    0.142689422 -0.029743493 -0.01696077   
+    </points>
+    <triangles>
+    0 1 2  3 2 1  4 0 2  4 5 0  6 0 5  6 5 1  6 1 0  7 8 3  
+    9 2 3  9 3 8  10 2 9  10 9 8  10 8 7  10 5 4  10 4 2  11 5 10  
+    11 10 7  11 1 5  12 1 11  12 11 7  12 3 1  12 7 3  
+    </triangles>
+  </NxConvexMeshDesc>
+  <NxConvexMeshDesc id="ob_chair_wood.obj_7">
+    <points>
+    -0.265485615 -0.172245055 0.2423397   -0.288199216 0.081338316 0.33725372   -0.288199216 0.081338316 -0.33725372   -0.26545316 -0.162137896 -0.300014526   
+    0.261982203 -0.162137836 -0.300014526   -0.288199216 0.152030855 0.33725372   0.288199216 0.152030736 0.33725372   -0.265485644 -0.172244996 0.305482686   
+    0.261982232 -0.172245055 0.305482686   -0.288199216 0.152030855 -0.33725372   -0.284700423 0.172234982 -0.254745096   0.288199216 0.152030855 -0.33725372   
+    0.286057204 0.172245055 -0.254459262   -0.284700423 0.170285314 -0.310327768   0.286057204 0.170295507 -0.310039192   0.288199216 0.081338316 -0.33725372   
+    0.288199216 0.081338197 0.33725372   0.261982232 -0.172244996 0.2423397   
+    </points>
+    <triangles>
+    0 1 2  3 2 4  3 4 0  3 0 2  5 1 6  5 2 1  7 8 1  7 1 0  
+    7 0 8  9 2 5  9 5 10  9 11 2  12 10 5  12 5 6  12 6 11  13 10 12  
+    13 11 9  13 9 10  14 12 11  14 11 13  14 13 12  15 2 11  15 4 2  15 11 6  
+    16 8 15  16 15 6  16 6 1  16 1 8  17 4 15  17 15 8  17 8 0  17 0 4  
+    </triangles>
+  </NxConvexMeshDesc>
+  <NxSceneDesc id="ob_chair_wood" userProperties="graphics_mesh=%22ob_chair_wood.obj%22">
+        <filterBool>false</filterBool>
+        <filterOp0>NX_FILTEROP_AND</filterOp0>
+        <filterOp1>NX_FILTEROP_AND</filterOp1>
+        <filterOp2>NX_FILTEROP_AND</filterOp2>
+        <NxGroupsMask id="groupMask0" bits0="0" bits1="0" bits2="0" bits3="0"/>
+        <NxGroupsMask id="groupMask1" bits0="0" bits1="0" bits2="0" bits3="0"/>
+        <gravity>0 -9.800000191 0</gravity>
+        <maxTimestep>0.016666668</maxTimestep>
+        <maxIter>8</maxIter>
+        <timeStepMethod>NX_TIMESTEP_FIXED</timeStepMethod>
+        <maxBounds>FLT_MIN FLT_MIN FLT_MIN  FLT_MAX FLT_MAX FLT_MAX</maxBounds>
+        <NxSceneLimits id="limits">
+          <maxNbActors>0</maxNbActors>
+          <maxNbBodies>0</maxNbBodies>
+          <maxNbStaticShapes>0</maxNbStaticShapes>
+          <maxNbDynamicShapes>0</maxNbDynamicShapes>
+          <maxNbJoints>0</maxNbJoints>
+        </NxSceneLimits>
+        <simType>NX_SIMULATION_SW</simType>
+        <groundPlane>true</groundPlane>
+        <boundsPlanes>false</boundsPlanes>
+        <NxSceneFlags id="flags">
+          <NX_SF_DISABLE_SSE>false</NX_SF_DISABLE_SSE>
+          <NX_SF_DISABLE_COLLISIONS>false</NX_SF_DISABLE_COLLISIONS>
+          <NX_SF_SIMULATE_SEPARATE_THREAD>true</NX_SF_SIMULATE_SEPARATE_THREAD>
+          <NX_SF_ENABLE_MULTITHREAD>false</NX_SF_ENABLE_MULTITHREAD>
+        </NxSceneFlags>
+        <internalThreadCount>0</internalThreadCount>
+        <backgroundThreadCount>0</backgroundThreadCount>
+        <threadMask>1431655764</threadMask>
+        <backgroundThreadMask>1431655764</backgroundThreadMask>
+        <NxMaterialDesc id="Material_0" userProperties="" hasSpring="false" materialIndex="0">
+          <dynamicFriction>0.5</dynamicFriction>
+          <staticFriction>0.5</staticFriction>
+          <restitution>0</restitution>
+          <dynamicFrictionV>0</dynamicFrictionV>
+          <staticFrictionV>0</staticFrictionV>
+          <frictionCombineMode>NX_CM_AVERAGE</frictionCombineMode>
+          <restitutionCombineMode>NX_CM_AVERAGE</restitutionCombineMode>
+          <dirOfAnisotropy>1 0 0</dirOfAnisotropy>
+          <NxMaterialFlag id="flags">
+            <NX_MF_ANISOTROPIC>false</NX_MF_ANISOTROPIC>
+            <NX_MF_DISABLE_FRICTION>false</NX_MF_DISABLE_FRICTION>
+            <NX_MF_DISABLE_STRONG_FRICTION>false</NX_MF_DISABLE_STRONG_FRICTION>
+          </NxMaterialFlag>
+        </NxMaterialDesc>
+    <NxActorDesc id="ob_chair_wood.obj_0" userProperties="" hasBody="true" name="ob_chair_wood.obj_0">
+      <globalPose> 1 0 0    0 1 0    0 0 1    -0.133618698 0.161290705 0.288122952 </globalPose>
+			<NxBodyDesc>
+        <mass>1</mass>
+        <density>0</density>
+        <linearDamping>0</linearDamping>
+        <angularDamping>0</angularDamping>
+        <solverIterationCount>16</solverIterationCount>
+        <NxBodyFlag id="flags">
+          <NX_BF_DISABLE_GRAVITY>false</NX_BF_DISABLE_GRAVITY>
+            <NX_BF_FROZEN_POS_X>false</NX_BF_FROZEN_POS_X>
+            <NX_BF_FROZEN_POS_Y>false</NX_BF_FROZEN_POS_Y>
+            <NX_BF_FROZEN_POS_Z>false</NX_BF_FROZEN_POS_Z>
+            <NX_BF_FROZEN_ROT_X>false</NX_BF_FROZEN_ROT_X>
+            <NX_BF_FROZEN_ROT_Y>false</NX_BF_FROZEN_ROT_Y>
+            <NX_BF_FROZEN_ROT_Z>false</NX_BF_FROZEN_ROT_Z>
+            <NX_BF_KINEMATIC>false</NX_BF_KINEMATIC>
+            <NX_BF_VISUALIZATION>false</NX_BF_VISUALIZATION>
+            <NX_BF_POSE_SLEEP_TEST>true</NX_BF_POSE_SLEEP_TEST>
+            <NX_BF_FILTER_SLEEP_VEL>false</NX_BF_FILTER_SLEEP_VEL>
+            <NX_BF_ENERGY_SLEEP_TEST>false</NX_BF_ENERGY_SLEEP_TEST>
+        </NxBodyFlag>
+      </NxBodyDesc>
+        <NxActorFlag id="flags">
+          <NX_AF_DISABLE_COLLISION>false</NX_AF_DISABLE_COLLISION>
+          <NX_AF_DISABLE_RESPONSE>false</NX_AF_DISABLE_RESPONSE>
+          <NX_AF_LOCK_COM>false</NX_AF_LOCK_COM>
+          <NX_AF_FLUID_DISABLE_COLLISION>false</NX_AF_FLUID_DISABLE_COLLISION>
+          <NX_AF_CONTACT_MODIFICATION>false</NX_AF_CONTACT_MODIFICATION>
+          <NX_AF_FORCE_CONE_FRICTION>false</NX_AF_FORCE_CONE_FRICTION>
+        </NxActorFlag>
+      <name>ob_chair_wood.obj_0</name>
+      <NxConvexShapeDesc id="Shape_0" meshData="ob_chair_wood.obj_1">
+      <NxShapeDesc>
+        <localPose>1 0 0    0 1 0    0 0 1    0 0 0 </localPose>
+        <skinWidth>0</skinWidth>
+      </NxShapeDesc>
+      </NxConvexShapeDesc>
+    </NxActorDesc>
+    <NxActorDesc id="ob_chair_wood.obj_1" userProperties="" hasBody="true" name="ob_chair_wood.obj_1">
+      <globalPose> 1 0 0    0 1 0    0 0 1    0.1301153 0.16129072 0.288122952 </globalPose>
+			<NxBodyDesc>
+        <mass>1</mass>
+        <density>0</density>
+        <linearDamping>0</linearDamping>
+        <angularDamping>0</angularDamping>
+        <solverIterationCount>16</solverIterationCount>
+        <NxBodyFlag id="flags">
+          <NX_BF_DISABLE_GRAVITY>false</NX_BF_DISABLE_GRAVITY>
+            <NX_BF_FROZEN_POS_X>false</NX_BF_FROZEN_POS_X>
+            <NX_BF_FROZEN_POS_Y>false</NX_BF_FROZEN_POS_Y>
+            <NX_BF_FROZEN_POS_Z>false</NX_BF_FROZEN_POS_Z>
+            <NX_BF_FROZEN_ROT_X>false</NX_BF_FROZEN_ROT_X>
+            <NX_BF_FROZEN_ROT_Y>false</NX_BF_FROZEN_ROT_Y>
+            <NX_BF_FROZEN_ROT_Z>false</NX_BF_FROZEN_ROT_Z>
+            <NX_BF_KINEMATIC>false</NX_BF_KINEMATIC>
+            <NX_BF_VISUALIZATION>false</NX_BF_VISUALIZATION>
+            <NX_BF_POSE_SLEEP_TEST>true</NX_BF_POSE_SLEEP_TEST>
+            <NX_BF_FILTER_SLEEP_VEL>false</NX_BF_FILTER_SLEEP_VEL>
+            <NX_BF_ENERGY_SLEEP_TEST>false</NX_BF_ENERGY_SLEEP_TEST>
+        </NxBodyFlag>
+      </NxBodyDesc>
+        <NxActorFlag id="flags">
+          <NX_AF_DISABLE_COLLISION>false</NX_AF_DISABLE_COLLISION>
+          <NX_AF_DISABLE_RESPONSE>false</NX_AF_DISABLE_RESPONSE>
+          <NX_AF_LOCK_COM>false</NX_AF_LOCK_COM>
+          <NX_AF_FLUID_DISABLE_COLLISION>false</NX_AF_FLUID_DISABLE_COLLISION>
+          <NX_AF_CONTACT_MODIFICATION>false</NX_AF_CONTACT_MODIFICATION>
+          <NX_AF_FORCE_CONE_FRICTION>false</NX_AF_FORCE_CONE_FRICTION>
+        </NxActorFlag>
+      <name>ob_chair_wood.obj_1</name>
+      <NxConvexShapeDesc id="Shape_0" meshData="ob_chair_wood.obj_2">
+      <NxShapeDesc>
+        <localPose>1 0 0    0 1 0    0 0 1    0 0 0 </localPose>
+        <skinWidth>0</skinWidth>
+      </NxShapeDesc>
+      </NxConvexShapeDesc>
+    </NxActorDesc>
+    <NxActorDesc id="ob_chair_wood.obj_2" userProperties="" hasBody="true" name="ob_chair_wood.obj_2">
+      <globalPose> 1 0 0    0 1 0    0 0 1    -0.133594379 0.166344345 -0.254231334 </globalPose>
+			<NxBodyDesc>
+        <mass>1</mass>
+        <density>0</density>
+        <linearDamping>0</linearDamping>
+        <angularDamping>0</angularDamping>
+        <solverIterationCount>16</solverIterationCount>
+        <NxBodyFlag id="flags">
+          <NX_BF_DISABLE_GRAVITY>false</NX_BF_DISABLE_GRAVITY>
+            <NX_BF_FROZEN_POS_X>false</NX_BF_FROZEN_POS_X>
+            <NX_BF_FROZEN_POS_Y>false</NX_BF_FROZEN_POS_Y>
+            <NX_BF_FROZEN_POS_Z>false</NX_BF_FROZEN_POS_Z>
+            <NX_BF_FROZEN_ROT_X>false</NX_BF_FROZEN_ROT_X>
+            <NX_BF_FROZEN_ROT_Y>false</NX_BF_FROZEN_ROT_Y>
+            <NX_BF_FROZEN_ROT_Z>false</NX_BF_FROZEN_ROT_Z>
+            <NX_BF_KINEMATIC>false</NX_BF_KINEMATIC>
+            <NX_BF_VISUALIZATION>false</NX_BF_VISUALIZATION>
+            <NX_BF_POSE_SLEEP_TEST>true</NX_BF_POSE_SLEEP_TEST>
+            <NX_BF_FILTER_SLEEP_VEL>false</NX_BF_FILTER_SLEEP_VEL>
+            <NX_BF_ENERGY_SLEEP_TEST>false</NX_BF_ENERGY_SLEEP_TEST>
+        </NxBodyFlag>
+      </NxBodyDesc>
+        <NxActorFlag id="flags">
+          <NX_AF_DISABLE_COLLISION>false</NX_AF_DISABLE_COLLISION>
+          <NX_AF_DISABLE_RESPONSE>false</NX_AF_DISABLE_RESPONSE>
+          <NX_AF_LOCK_COM>false</NX_AF_LOCK_COM>
+          <NX_AF_FLUID_DISABLE_COLLISION>false</NX_AF_FLUID_DISABLE_COLLISION>
+          <NX_AF_CONTACT_MODIFICATION>false</NX_AF_CONTACT_MODIFICATION>
+          <NX_AF_FORCE_CONE_FRICTION>false</NX_AF_FORCE_CONE_FRICTION>
+        </NxActorFlag>
+      <name>ob_chair_wood.obj_2</name>
+      <NxConvexShapeDesc id="Shape_0" meshData="ob_chair_wood.obj_3">
+      <NxShapeDesc>
+        <localPose>1 0 0    0 1 0    0 0 1    0 0 0 </localPose>
+        <skinWidth>0</skinWidth>
+      </NxShapeDesc>
+      </NxConvexShapeDesc>
+    </NxActorDesc>
+    <NxActorDesc id="ob_chair_wood.obj_3" userProperties="" hasBody="true" name="ob_chair_wood.obj_3">
+      <globalPose> 1 0 0    0 1 0    0 0 1    0.130123392 0.166344345 -0.254231334 </globalPose>
+			<NxBodyDesc>
+        <mass>1</mass>
+        <density>0</density>
+        <linearDamping>0</linearDamping>
+        <angularDamping>0</angularDamping>
+        <solverIterationCount>16</solverIterationCount>
+        <NxBodyFlag id="flags">
+          <NX_BF_DISABLE_GRAVITY>false</NX_BF_DISABLE_GRAVITY>
+            <NX_BF_FROZEN_POS_X>false</NX_BF_FROZEN_POS_X>
+            <NX_BF_FROZEN_POS_Y>false</NX_BF_FROZEN_POS_Y>
+            <NX_BF_FROZEN_POS_Z>false</NX_BF_FROZEN_POS_Z>
+            <NX_BF_FROZEN_ROT_X>false</NX_BF_FROZEN_ROT_X>
+            <NX_BF_FROZEN_ROT_Y>false</NX_BF_FROZEN_ROT_Y>
+            <NX_BF_FROZEN_ROT_Z>false</NX_BF_FROZEN_ROT_Z>
+            <NX_BF_KINEMATIC>false</NX_BF_KINEMATIC>
+            <NX_BF_VISUALIZATION>false</NX_BF_VISUALIZATION>
+            <NX_BF_POSE_SLEEP_TEST>true</NX_BF_POSE_SLEEP_TEST>
+            <NX_BF_FILTER_SLEEP_VEL>false</NX_BF_FILTER_SLEEP_VEL>
+            <NX_BF_ENERGY_SLEEP_TEST>false</NX_BF_ENERGY_SLEEP_TEST>
+        </NxBodyFlag>
+      </NxBodyDesc>
+        <NxActorFlag id="flags">
+          <NX_AF_DISABLE_COLLISION>false</NX_AF_DISABLE_COLLISION>
+          <NX_AF_DISABLE_RESPONSE>false</NX_AF_DISABLE_RESPONSE>
+          <NX_AF_LOCK_COM>false</NX_AF_LOCK_COM>
+          <NX_AF_FLUID_DISABLE_COLLISION>false</NX_AF_FLUID_DISABLE_COLLISION>
+          <NX_AF_CONTACT_MODIFICATION>false</NX_AF_CONTACT_MODIFICATION>
+          <NX_AF_FORCE_CONE_FRICTION>false</NX_AF_FORCE_CONE_FRICTION>
+        </NxActorFlag>
+      <name>ob_chair_wood.obj_3</name>
+      <NxConvexShapeDesc id="Shape_0" meshData="ob_chair_wood.obj_4">
+      <NxShapeDesc>
+        <localPose>1 0 0    0 1 0    0 0 1    0 0 0 </localPose>
+        <skinWidth>0</skinWidth>
+      </NxShapeDesc>
+      </NxConvexShapeDesc>
+    </NxActorDesc>
+    <NxActorDesc id="ob_chair_wood.obj_4" userProperties="" hasBody="true" name="ob_chair_wood.obj_4">
+      <globalPose> 1 0 0    0 1 0    0 0 1    0.143367767 1.01017487 -0.295856446 </globalPose>
+			<NxBodyDesc>
+        <mass>1</mass>
+        <density>0</density>
+        <linearDamping>0</linearDamping>
+        <angularDamping>0</angularDamping>
+        <solverIterationCount>16</solverIterationCount>
+        <NxBodyFlag id="flags">
+          <NX_BF_DISABLE_GRAVITY>false</NX_BF_DISABLE_GRAVITY>
+            <NX_BF_FROZEN_POS_X>false</NX_BF_FROZEN_POS_X>
+            <NX_BF_FROZEN_POS_Y>false</NX_BF_FROZEN_POS_Y>
+            <NX_BF_FROZEN_POS_Z>false</NX_BF_FROZEN_POS_Z>
+            <NX_BF_FROZEN_ROT_X>false</NX_BF_FROZEN_ROT_X>
+            <NX_BF_FROZEN_ROT_Y>false</NX_BF_FROZEN_ROT_Y>
+            <NX_BF_FROZEN_ROT_Z>false</NX_BF_FROZEN_ROT_Z>
+            <NX_BF_KINEMATIC>false</NX_BF_KINEMATIC>
+            <NX_BF_VISUALIZATION>false</NX_BF_VISUALIZATION>
+            <NX_BF_POSE_SLEEP_TEST>true</NX_BF_POSE_SLEEP_TEST>
+            <NX_BF_FILTER_SLEEP_VEL>false</NX_BF_FILTER_SLEEP_VEL>
+            <NX_BF_ENERGY_SLEEP_TEST>false</NX_BF_ENERGY_SLEEP_TEST>
+        </NxBodyFlag>
+      </NxBodyDesc>
+        <NxActorFlag id="flags">
+          <NX_AF_DISABLE_COLLISION>false</NX_AF_DISABLE_COLLISION>
+          <NX_AF_DISABLE_RESPONSE>false</NX_AF_DISABLE_RESPONSE>
+          <NX_AF_LOCK_COM>false</NX_AF_LOCK_COM>
+          <NX_AF_FLUID_DISABLE_COLLISION>false</NX_AF_FLUID_DISABLE_COLLISION>
+          <NX_AF_CONTACT_MODIFICATION>false</NX_AF_CONTACT_MODIFICATION>
+          <NX_AF_FORCE_CONE_FRICTION>false</NX_AF_FORCE_CONE_FRICTION>
+        </NxActorFlag>
+      <name>ob_chair_wood.obj_4</name>
+      <NxConvexShapeDesc id="Shape_0" meshData="ob_chair_wood.obj_5">
+      <NxShapeDesc>
+        <localPose>1 0 0    0 1 0    0 0 1    0 0 0 </localPose>
+        <skinWidth>0</skinWidth>
+      </NxShapeDesc>
+      </NxConvexShapeDesc>
+    </NxActorDesc>
+    <NxActorDesc id="ob_chair_wood.obj_5" userProperties="" hasBody="true" name="ob_chair_wood.obj_5">
+      <globalPose> 1 0 0    0 1 0    0 0 1    -0.142011046 1.008395314 -0.295999318 </globalPose>
+			<NxBodyDesc>
+        <mass>1</mass>
+        <density>0</density>
+        <linearDamping>0</linearDamping>
+        <angularDamping>0</angularDamping>
+        <solverIterationCount>16</solverIterationCount>
+        <NxBodyFlag id="flags">
+          <NX_BF_DISABLE_GRAVITY>false</NX_BF_DISABLE_GRAVITY>
+            <NX_BF_FROZEN_POS_X>false</NX_BF_FROZEN_POS_X>
+            <NX_BF_FROZEN_POS_Y>false</NX_BF_FROZEN_POS_Y>
+            <NX_BF_FROZEN_POS_Z>false</NX_BF_FROZEN_POS_Z>
+            <NX_BF_FROZEN_ROT_X>false</NX_BF_FROZEN_ROT_X>
+            <NX_BF_FROZEN_ROT_Y>false</NX_BF_FROZEN_ROT_Y>
+            <NX_BF_FROZEN_ROT_Z>false</NX_BF_FROZEN_ROT_Z>
+            <NX_BF_KINEMATIC>false</NX_BF_KINEMATIC>
+            <NX_BF_VISUALIZATION>false</NX_BF_VISUALIZATION>
+            <NX_BF_POSE_SLEEP_TEST>true</NX_BF_POSE_SLEEP_TEST>
+            <NX_BF_FILTER_SLEEP_VEL>false</NX_BF_FILTER_SLEEP_VEL>
+            <NX_BF_ENERGY_SLEEP_TEST>false</NX_BF_ENERGY_SLEEP_TEST>
+        </NxBodyFlag>
+      </NxBodyDesc>
+        <NxActorFlag id="flags">
+          <NX_AF_DISABLE_COLLISION>false</NX_AF_DISABLE_COLLISION>
+          <NX_AF_DISABLE_RESPONSE>false</NX_AF_DISABLE_RESPONSE>
+          <NX_AF_LOCK_COM>false</NX_AF_LOCK_COM>
+          <NX_AF_FLUID_DISABLE_COLLISION>false</NX_AF_FLUID_DISABLE_COLLISION>
+          <NX_AF_CONTACT_MODIFICATION>false</NX_AF_CONTACT_MODIFICATION>
+          <NX_AF_FORCE_CONE_FRICTION>false</NX_AF_FORCE_CONE_FRICTION>
+        </NxActorFlag>
+      <name>ob_chair_wood.obj_5</name>
+      <NxConvexShapeDesc id="Shape_0" meshData="ob_chair_wood.obj_6">
+      <NxShapeDesc>
+        <localPose>1 0 0    0 1 0    0 0 1    0 0 0 </localPose>
+        <skinWidth>0</skinWidth>
+      </NxShapeDesc>
+      </NxConvexShapeDesc>
+    </NxActorDesc>
+    <NxActorDesc id="ob_chair_wood.obj_6" userProperties="" hasBody="true" name="ob_chair_wood.obj_6">
+      <globalPose> 1 0 0    0 1 0    0 0 1    0 0.495673567 0.014211774 </globalPose>
+			<NxBodyDesc>
+        <mass>1</mass>
+        <density>0</density>
+        <linearDamping>0</linearDamping>
+        <angularDamping>0</angularDamping>
+        <solverIterationCount>16</solverIterationCount>
+        <NxBodyFlag id="flags">
+          <NX_BF_DISABLE_GRAVITY>false</NX_BF_DISABLE_GRAVITY>
+            <NX_BF_FROZEN_POS_X>false</NX_BF_FROZEN_POS_X>
+            <NX_BF_FROZEN_POS_Y>false</NX_BF_FROZEN_POS_Y>
+            <NX_BF_FROZEN_POS_Z>false</NX_BF_FROZEN_POS_Z>
+            <NX_BF_FROZEN_ROT_X>false</NX_BF_FROZEN_ROT_X>
+            <NX_BF_FROZEN_ROT_Y>false</NX_BF_FROZEN_ROT_Y>
+            <NX_BF_FROZEN_ROT_Z>false</NX_BF_FROZEN_ROT_Z>
+            <NX_BF_KINEMATIC>false</NX_BF_KINEMATIC>
+            <NX_BF_VISUALIZATION>false</NX_BF_VISUALIZATION>
+            <NX_BF_POSE_SLEEP_TEST>true</NX_BF_POSE_SLEEP_TEST>
+            <NX_BF_FILTER_SLEEP_VEL>false</NX_BF_FILTER_SLEEP_VEL>
+            <NX_BF_ENERGY_SLEEP_TEST>false</NX_BF_ENERGY_SLEEP_TEST>
+        </NxBodyFlag>
+      </NxBodyDesc>
+        <NxActorFlag id="flags">
+          <NX_AF_DISABLE_COLLISION>false</NX_AF_DISABLE_COLLISION>
+          <NX_AF_DISABLE_RESPONSE>false</NX_AF_DISABLE_RESPONSE>
+          <NX_AF_LOCK_COM>false</NX_AF_LOCK_COM>
+          <NX_AF_FLUID_DISABLE_COLLISION>false</NX_AF_FLUID_DISABLE_COLLISION>
+          <NX_AF_CONTACT_MODIFICATION>false</NX_AF_CONTACT_MODIFICATION>
+          <NX_AF_FORCE_CONE_FRICTION>false</NX_AF_FORCE_CONE_FRICTION>
+        </NxActorFlag>
+      <name>ob_chair_wood.obj_6</name>
+      <NxConvexShapeDesc id="Shape_0" meshData="ob_chair_wood.obj_7">
+      <NxShapeDesc>
+        <localPose>1 0 0    0 1 0    0 0 1    0 0 0 </localPose>
+        <skinWidth>0</skinWidth>
+      </NxShapeDesc>
+      </NxConvexShapeDesc>
+    </NxActorDesc>
+    <NxD6JointDesc>
+      <NxJointDesc id="ob_chair_wood.obj_0" userProperties="" name="ob_chair_wood.obj_0">
+        <actor0>ob_chair_wood.obj_6</actor0>
+        <actor1>ob_chair_wood.obj_0</actor1>
+        <localNormal0>-0.382457912 -0.484910518 0.786503434</localNormal0>
+        <localAxis0>-0.212057576 0.874563754 0.436084628</localAxis0>
+        <localAnchor0>-0.001751721 -0.167191446 0.00273408</localAnchor0>
+        <localNormal1>-0.382457912 -0.484910518 0.786503434</localNormal1>
+        <localAxis1>-0.212057576 0.874563754 0.436084628</localAxis1>
+        <localAnchor1>0.131866977 0.167191416 -0.271177083</localAnchor1>
+        <maxForce>FLT_MAX</maxForce>
+        <maxTorque>FLT_MAX</maxTorque>
+        <NxJointFlag id="jointFlags">
+          <NX_JF_COLLISION_ENABLED>false</NX_JF_COLLISION_ENABLED>
+          <NX_JF_VISUALIZATION>true</NX_JF_VISUALIZATION>
+        </NxJointFlag>
+        <planeLimitPoint>0 0 0</planeLimitPoint>
+        <onActor2>false</onActor2>
+      </NxJointDesc>
+      <xMotion>NX_D6JOINT_MOTION_LOCKED</xMotion>
+      <yMotion>NX_D6JOINT_MOTION_LOCKED</yMotion>
+      <zMotion>NX_D6JOINT_MOTION_LOCKED</zMotion>
+      <swing1Motion>NX_D6JOINT_MOTION_LOCKED</swing1Motion>
+      <swing2Motion>NX_D6JOINT_MOTION_LOCKED</swing2Motion>
+      <twistMotion>NX_D6JOINT_MOTION_LIMITED</twistMotion>
+      <NxJointLimitSoftDesc id="linearLimit">
+        <value>0</value>
+        <restitution>0</restitution>
+        <spring>0</spring>
+        <damping>0</damping>
+      </NxJointLimitSoftDesc>
+      <NxJointLimitSoftPairDesc id="twistLimit">
+        <NxJointLimitSoftDesc id="low">
+          <value>-1.57076323</value>
+          <restitution>0</restitution>
+          <spring>0</spring>
+          <damping>0</damping>
+		    </NxJointLimitSoftDesc>
+       <NxJointLimitSoftDesc id="high">
+         <value>1.57076323</value>
+         <restitution>0</restitution>
+         <spring>0</spring>
+         <damping>0</damping>
+		    </NxJointLimitSoftDesc>
+      </NxJointLimitSoftPairDesc>
+          <NxJointDriveDesc id="xDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="yDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="zDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="slerpDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="swingDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="twistDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <drivePosition>0 0 0</drivePosition>
+          <driveOrientation>0 0 0 1</driveOrientation>
+          <driveLinearVelocity>0 0 0</driveLinearVelocity>
+          <driveAngularVelocity>0 0 0</driveAngularVelocity>
+      <projectionMode>NX_JPM_NONE</projectionMode>
+      <projectionDistance>0.02</projectionDistance>
+      <projectionAngle>0.087264627</projectionAngle>
+          <gearRatio>1</gearRatio>
+          <NxD6JointFlag id="flags">
+            <NX_D6JOINT_SLERP_DRIVE>false</NX_D6JOINT_SLERP_DRIVE>
+            <NX_D6JOINT_GEAR_ENABLED>false</NX_D6JOINT_GEAR_ENABLED>
+          </NxD6JointFlag>
+    </NxD6JointDesc>
+    <NxD6JointDesc>
+      <NxJointDesc id="ob_chair_wood.obj_1" userProperties="" name="ob_chair_wood.obj_1">
+        <actor0>ob_chair_wood.obj_6</actor0>
+        <actor1>ob_chair_wood.obj_1</actor1>
+        <localNormal0>0.382457912 -0.484910488 0.786503494</localNormal0>
+        <localAxis0>0.212057546 0.874563754 0.436084598</localAxis0>
+        <localAnchor0>-0.001751661 -0.167191446 0.00273408</localAnchor0>
+        <localNormal1>0.382457912 -0.484910488 0.786503494</localNormal1>
+        <localAxis1>0.212057546 0.874563754 0.436084598</localAxis1>
+        <localAnchor1>-0.131866962 0.167191401 -0.271177083</localAnchor1>
+        <maxForce>FLT_MAX</maxForce>
+        <maxTorque>FLT_MAX</maxTorque>
+        <NxJointFlag id="jointFlags">
+          <NX_JF_COLLISION_ENABLED>false</NX_JF_COLLISION_ENABLED>
+          <NX_JF_VISUALIZATION>true</NX_JF_VISUALIZATION>
+        </NxJointFlag>
+        <planeLimitPoint>0 0 0</planeLimitPoint>
+        <onActor2>false</onActor2>
+      </NxJointDesc>
+      <xMotion>NX_D6JOINT_MOTION_LOCKED</xMotion>
+      <yMotion>NX_D6JOINT_MOTION_LOCKED</yMotion>
+      <zMotion>NX_D6JOINT_MOTION_LOCKED</zMotion>
+      <swing1Motion>NX_D6JOINT_MOTION_LOCKED</swing1Motion>
+      <swing2Motion>NX_D6JOINT_MOTION_LOCKED</swing2Motion>
+      <twistMotion>NX_D6JOINT_MOTION_LIMITED</twistMotion>
+      <NxJointLimitSoftDesc id="linearLimit">
+        <value>0</value>
+        <restitution>0</restitution>
+        <spring>0</spring>
+        <damping>0</damping>
+      </NxJointLimitSoftDesc>
+      <NxJointLimitSoftPairDesc id="twistLimit">
+        <NxJointLimitSoftDesc id="low">
+          <value>-1.57076323</value>
+          <restitution>0</restitution>
+          <spring>0</spring>
+          <damping>0</damping>
+		    </NxJointLimitSoftDesc>
+       <NxJointLimitSoftDesc id="high">
+         <value>1.57076323</value>
+         <restitution>0</restitution>
+         <spring>0</spring>
+         <damping>0</damping>
+		    </NxJointLimitSoftDesc>
+      </NxJointLimitSoftPairDesc>
+          <NxJointDriveDesc id="xDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="yDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="zDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="slerpDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="swingDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="twistDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <drivePosition>0 0 0</drivePosition>
+          <driveOrientation>0 0 0 1</driveOrientation>
+          <driveLinearVelocity>0 0 0</driveLinearVelocity>
+          <driveAngularVelocity>0 0 0</driveAngularVelocity>
+      <projectionMode>NX_JPM_NONE</projectionMode>
+      <projectionDistance>0.02</projectionDistance>
+      <projectionAngle>0.087264627</projectionAngle>
+          <gearRatio>1</gearRatio>
+          <NxD6JointFlag id="flags">
+            <NX_D6JOINT_SLERP_DRIVE>false</NX_D6JOINT_SLERP_DRIVE>
+            <NX_D6JOINT_GEAR_ENABLED>false</NX_D6JOINT_GEAR_ENABLED>
+          </NxD6JointFlag>
+    </NxD6JointDesc>
+    <NxD6JointDesc>
+      <NxJointDesc id="ob_chair_wood.obj_2" userProperties="" name="ob_chair_wood.obj_2">
+        <actor0>ob_chair_wood.obj_6</actor0>
+        <actor1>ob_chair_wood.obj_2</actor1>
+        <localNormal0>-0.414685667 -0.509973049 -0.75363332</localNormal0>
+        <localAxis0>-0.245850831 0.860190332 -0.446799576</localAxis0>
+        <localAnchor0>-0.001751706 -0.167191446 -0.028837442</localAnchor0>
+        <localNormal1>-0.414685667 -0.509973049 -0.75363332</localNormal1>
+        <localAxis1>-0.245850831 0.860190332 -0.446799576</localAxis1>
+        <localAnchor1>0.131842673 0.162137777 0.239605665</localAnchor1>
+        <maxForce>FLT_MAX</maxForce>
+        <maxTorque>FLT_MAX</maxTorque>
+        <NxJointFlag id="jointFlags">
+          <NX_JF_COLLISION_ENABLED>false</NX_JF_COLLISION_ENABLED>
+          <NX_JF_VISUALIZATION>true</NX_JF_VISUALIZATION>
+        </NxJointFlag>
+        <planeLimitPoint>0 0 0</planeLimitPoint>
+        <onActor2>false</onActor2>
+      </NxJointDesc>
+      <xMotion>NX_D6JOINT_MOTION_LOCKED</xMotion>
+      <yMotion>NX_D6JOINT_MOTION_LOCKED</yMotion>
+      <zMotion>NX_D6JOINT_MOTION_LOCKED</zMotion>
+      <swing1Motion>NX_D6JOINT_MOTION_LOCKED</swing1Motion>
+      <swing2Motion>NX_D6JOINT_MOTION_LOCKED</swing2Motion>
+      <twistMotion>NX_D6JOINT_MOTION_LIMITED</twistMotion>
+      <NxJointLimitSoftDesc id="linearLimit">
+        <value>0</value>
+        <restitution>0</restitution>
+        <spring>0</spring>
+        <damping>0</damping>
+      </NxJointLimitSoftDesc>
+      <NxJointLimitSoftPairDesc id="twistLimit">
+        <NxJointLimitSoftDesc id="low">
+          <value>-1.57076323</value>
+          <restitution>0</restitution>
+          <spring>0</spring>
+          <damping>0</damping>
+		    </NxJointLimitSoftDesc>
+       <NxJointLimitSoftDesc id="high">
+         <value>1.57076323</value>
+         <restitution>0</restitution>
+         <spring>0</spring>
+         <damping>0</damping>
+		    </NxJointLimitSoftDesc>
+      </NxJointLimitSoftPairDesc>
+          <NxJointDriveDesc id="xDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="yDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="zDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="slerpDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="swingDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="twistDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <drivePosition>0 0 0</drivePosition>
+          <driveOrientation>0 0 0 1</driveOrientation>
+          <driveLinearVelocity>0 0 0</driveLinearVelocity>
+          <driveAngularVelocity>0 0 0</driveAngularVelocity>
+      <projectionMode>NX_JPM_NONE</projectionMode>
+      <projectionDistance>0.02</projectionDistance>
+      <projectionAngle>0.087264627</projectionAngle>
+          <gearRatio>1</gearRatio>
+          <NxD6JointFlag id="flags">
+            <NX_D6JOINT_SLERP_DRIVE>false</NX_D6JOINT_SLERP_DRIVE>
+            <NX_D6JOINT_GEAR_ENABLED>false</NX_D6JOINT_GEAR_ENABLED>
+          </NxD6JointFlag>
+    </NxD6JointDesc>
+    <NxD6JointDesc>
+      <NxJointDesc id="ob_chair_wood.obj_3" userProperties="" name="ob_chair_wood.obj_3">
+        <actor0>ob_chair_wood.obj_6</actor0>
+        <actor1>ob_chair_wood.obj_3</actor1>
+        <localNormal0>0.414769948 -0.509951532 -0.753601491</localNormal0>
+        <localAxis0>0.245886803 0.860203087 -0.44675526</localAxis0>
+        <localAnchor0>-0.001751661 -0.167191416 -0.028837427</localAnchor0>
+        <localNormal1>0.414769948 -0.509951532 -0.753601491</localNormal1>
+        <localAxis1>0.245886803 0.860203087 -0.44675526</localAxis1>
+        <localAnchor1>-0.131875053 0.162137806 0.23960568</localAnchor1>
+        <maxForce>FLT_MAX</maxForce>
+        <maxTorque>FLT_MAX</maxTorque>
+        <NxJointFlag id="jointFlags">
+          <NX_JF_COLLISION_ENABLED>false</NX_JF_COLLISION_ENABLED>
+          <NX_JF_VISUALIZATION>true</NX_JF_VISUALIZATION>
+        </NxJointFlag>
+        <planeLimitPoint>0 0 0</planeLimitPoint>
+        <onActor2>false</onActor2>
+      </NxJointDesc>
+      <xMotion>NX_D6JOINT_MOTION_LOCKED</xMotion>
+      <yMotion>NX_D6JOINT_MOTION_LOCKED</yMotion>
+      <zMotion>NX_D6JOINT_MOTION_LOCKED</zMotion>
+      <swing1Motion>NX_D6JOINT_MOTION_LOCKED</swing1Motion>
+      <swing2Motion>NX_D6JOINT_MOTION_LOCKED</swing2Motion>
+      <twistMotion>NX_D6JOINT_MOTION_LIMITED</twistMotion>
+      <NxJointLimitSoftDesc id="linearLimit">
+        <value>0</value>
+        <restitution>0</restitution>
+        <spring>0</spring>
+        <damping>0</damping>
+      </NxJointLimitSoftDesc>
+      <NxJointLimitSoftPairDesc id="twistLimit">
+        <NxJointLimitSoftDesc id="low">
+          <value>-1.57076323</value>
+          <restitution>0</restitution>
+          <spring>0</spring>
+          <damping>0</damping>
+		    </NxJointLimitSoftDesc>
+       <NxJointLimitSoftDesc id="high">
+         <value>1.57076323</value>
+         <restitution>0</restitution>
+         <spring>0</spring>
+         <damping>0</damping>
+		    </NxJointLimitSoftDesc>
+      </NxJointLimitSoftPairDesc>
+          <NxJointDriveDesc id="xDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="yDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="zDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="slerpDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="swingDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="twistDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <drivePosition>0 0 0</drivePosition>
+          <driveOrientation>0 0 0 1</driveOrientation>
+          <driveLinearVelocity>0 0 0</driveLinearVelocity>
+          <driveAngularVelocity>0 0 0</driveAngularVelocity>
+      <projectionMode>NX_JPM_NONE</projectionMode>
+      <projectionDistance>0.02</projectionDistance>
+      <projectionAngle>0.087264627</projectionAngle>
+          <gearRatio>1</gearRatio>
+          <NxD6JointFlag id="flags">
+            <NX_D6JOINT_SLERP_DRIVE>false</NX_D6JOINT_SLERP_DRIVE>
+            <NX_D6JOINT_GEAR_ENABLED>false</NX_D6JOINT_GEAR_ENABLED>
+          </NxD6JointFlag>
+    </NxD6JointDesc>
+    <NxD6JointDesc>
+      <NxJointDesc id="ob_chair_wood.obj_4" userProperties="" name="ob_chair_wood.obj_4">
+        <actor0>ob_chair_wood.obj_6</actor0>
+        <actor1>ob_chair_wood.obj_4</actor1>
+        <localNormal0>0.288999915 0.705025256 -0.647625208</localNormal0>
+        <localAxis0>-0.287305921 0.709182143 0.643829107</localAxis0>
+        <localAnchor0>-0.001071006 0.162137955 0.013607264</localAnchor0>
+        <localNormal1>0.288999915 0.705025256 -0.647625208</localNormal1>
+        <localAxis1>-0.287305921 0.709182143 0.643829107</localAxis1>
+        <localAnchor1>-0.144438773 -0.352363348 0.323675483</localAnchor1>
+        <maxForce>FLT_MAX</maxForce>
+        <maxTorque>FLT_MAX</maxTorque>
+        <NxJointFlag id="jointFlags">
+          <NX_JF_COLLISION_ENABLED>false</NX_JF_COLLISION_ENABLED>
+          <NX_JF_VISUALIZATION>true</NX_JF_VISUALIZATION>
+        </NxJointFlag>
+        <planeLimitPoint>0 0 0</planeLimitPoint>
+        <onActor2>false</onActor2>
+      </NxJointDesc>
+      <xMotion>NX_D6JOINT_MOTION_LOCKED</xMotion>
+      <yMotion>NX_D6JOINT_MOTION_LOCKED</yMotion>
+      <zMotion>NX_D6JOINT_MOTION_LOCKED</zMotion>
+      <swing1Motion>NX_D6JOINT_MOTION_LOCKED</swing1Motion>
+      <swing2Motion>NX_D6JOINT_MOTION_LOCKED</swing2Motion>
+      <twistMotion>NX_D6JOINT_MOTION_LIMITED</twistMotion>
+      <NxJointLimitSoftDesc id="linearLimit">
+        <value>0</value>
+        <restitution>0</restitution>
+        <spring>0</spring>
+        <damping>0</damping>
+      </NxJointLimitSoftDesc>
+      <NxJointLimitSoftPairDesc id="twistLimit">
+        <NxJointLimitSoftDesc id="low">
+          <value>-1.57076323</value>
+          <restitution>0</restitution>
+          <spring>0</spring>
+          <damping>0</damping>
+		    </NxJointLimitSoftDesc>
+       <NxJointLimitSoftDesc id="high">
+         <value>1.57076323</value>
+         <restitution>0</restitution>
+         <spring>0</spring>
+         <damping>0</damping>
+		    </NxJointLimitSoftDesc>
+      </NxJointLimitSoftPairDesc>
+          <NxJointDriveDesc id="xDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="yDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="zDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="slerpDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="swingDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="twistDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <drivePosition>0 0 0</drivePosition>
+          <driveOrientation>0 0 0 1</driveOrientation>
+          <driveLinearVelocity>0 0 0</driveLinearVelocity>
+          <driveAngularVelocity>0 0 0</driveAngularVelocity>
+      <projectionMode>NX_JPM_NONE</projectionMode>
+      <projectionDistance>0.02</projectionDistance>
+      <projectionAngle>0.087264627</projectionAngle>
+          <gearRatio>1</gearRatio>
+          <NxD6JointFlag id="flags">
+            <NX_D6JOINT_SLERP_DRIVE>false</NX_D6JOINT_SLERP_DRIVE>
+            <NX_D6JOINT_GEAR_ENABLED>false</NX_D6JOINT_GEAR_ENABLED>
+          </NxD6JointFlag>
+    </NxD6JointDesc>
+    <NxD6JointDesc>
+      <NxJointDesc id="ob_chair_wood.obj_5" userProperties="" name="ob_chair_wood.obj_5">
+        <actor0>ob_chair_wood.obj_6</actor0>
+        <actor1>ob_chair_wood.obj_5</actor1>
+        <localNormal0>-0.283278376 0.704645813 -0.650559425</localNormal0>
+        <localAxis0>0.281316787 0.709559143 0.646054626</localAxis0>
+        <localAnchor0>-0.001071006 0.162137955 0.013462976</localAnchor0>
+        <localNormal1>-0.283278376 0.704645813 -0.650559425</localNormal1>
+        <localAxis1>0.281316787 0.709559143 0.646054626</localAxis1>
+        <localAnchor1>0.14094004 -0.350583792 0.323674053</localAnchor1>
+        <maxForce>FLT_MAX</maxForce>
+        <maxTorque>FLT_MAX</maxTorque>
+        <NxJointFlag id="jointFlags">
+          <NX_JF_COLLISION_ENABLED>false</NX_JF_COLLISION_ENABLED>
+          <NX_JF_VISUALIZATION>true</NX_JF_VISUALIZATION>
+        </NxJointFlag>
+        <planeLimitPoint>0 0 0</planeLimitPoint>
+        <onActor2>false</onActor2>
+      </NxJointDesc>
+      <xMotion>NX_D6JOINT_MOTION_LOCKED</xMotion>
+      <yMotion>NX_D6JOINT_MOTION_LOCKED</yMotion>
+      <zMotion>NX_D6JOINT_MOTION_LOCKED</zMotion>
+      <swing1Motion>NX_D6JOINT_MOTION_LOCKED</swing1Motion>
+      <swing2Motion>NX_D6JOINT_MOTION_LOCKED</swing2Motion>
+      <twistMotion>NX_D6JOINT_MOTION_LIMITED</twistMotion>
+      <NxJointLimitSoftDesc id="linearLimit">
+        <value>0</value>
+        <restitution>0</restitution>
+        <spring>0</spring>
+        <damping>0</damping>
+      </NxJointLimitSoftDesc>
+      <NxJointLimitSoftPairDesc id="twistLimit">
+        <NxJointLimitSoftDesc id="low">
+          <value>-1.57076323</value>
+          <restitution>0</restitution>
+          <spring>0</spring>
+          <damping>0</damping>
+		    </NxJointLimitSoftDesc>
+       <NxJointLimitSoftDesc id="high">
+         <value>1.57076323</value>
+         <restitution>0</restitution>
+         <spring>0</spring>
+         <damping>0</damping>
+		    </NxJointLimitSoftDesc>
+      </NxJointLimitSoftPairDesc>
+          <NxJointDriveDesc id="xDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="yDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="zDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="slerpDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="swingDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="twistDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <drivePosition>0 0 0</drivePosition>
+          <driveOrientation>0 0 0 1</driveOrientation>
+          <driveLinearVelocity>0 0 0</driveLinearVelocity>
+          <driveAngularVelocity>0 0 0</driveAngularVelocity>
+      <projectionMode>NX_JPM_NONE</projectionMode>
+      <projectionDistance>0.02</projectionDistance>
+      <projectionAngle>0.087264627</projectionAngle>
+          <gearRatio>1</gearRatio>
+          <NxD6JointFlag id="flags">
+            <NX_D6JOINT_SLERP_DRIVE>false</NX_D6JOINT_SLERP_DRIVE>
+            <NX_D6JOINT_GEAR_ENABLED>false</NX_D6JOINT_GEAR_ENABLED>
+          </NxD6JointFlag>
+    </NxD6JointDesc>
+    <NxD6JointDesc>
+      <NxJointDesc id="ob_chair_wood.obj_1" userProperties="" name="ob_chair_wood.obj_1">
+        <actor0>ob_chair_wood.obj_0</actor0>
+        <actor1>ob_chair_wood.obj_1</actor1>
+        <localNormal0>0.99999994 0 0</localNormal0>
+        <localAxis0>0 0.99999994 0</localAxis0>
+        <localAnchor0>0.162458658 0.000000015 0</localAnchor0>
+        <localNormal1>0.99999994 0 0</localNormal1>
+        <localAxis1>0 0.99999994 0</localAxis1>
+        <localAnchor1>-0.10127534 0 0</localAnchor1>
+        <maxForce>FLT_MAX</maxForce>
+        <maxTorque>FLT_MAX</maxTorque>
+        <NxJointFlag id="jointFlags">
+          <NX_JF_COLLISION_ENABLED>false</NX_JF_COLLISION_ENABLED>
+          <NX_JF_VISUALIZATION>true</NX_JF_VISUALIZATION>
+        </NxJointFlag>
+        <planeLimitPoint>0 0 0</planeLimitPoint>
+        <onActor2>false</onActor2>
+      </NxJointDesc>
+      <xMotion>NX_D6JOINT_MOTION_LOCKED</xMotion>
+      <yMotion>NX_D6JOINT_MOTION_LOCKED</yMotion>
+      <zMotion>NX_D6JOINT_MOTION_LOCKED</zMotion>
+      <swing1Motion>NX_D6JOINT_MOTION_LOCKED</swing1Motion>
+      <swing2Motion>NX_D6JOINT_MOTION_LOCKED</swing2Motion>
+      <twistMotion>NX_D6JOINT_MOTION_LIMITED</twistMotion>
+      <NxJointLimitSoftDesc id="linearLimit">
+        <value>0</value>
+        <restitution>0</restitution>
+        <spring>0</spring>
+        <damping>0</damping>
+      </NxJointLimitSoftDesc>
+      <NxJointLimitSoftPairDesc id="twistLimit">
+        <NxJointLimitSoftDesc id="low">
+          <value>-1.57076323</value>
+          <restitution>0</restitution>
+          <spring>0</spring>
+          <damping>0</damping>
+		    </NxJointLimitSoftDesc>
+       <NxJointLimitSoftDesc id="high">
+         <value>1.57076323</value>
+         <restitution>0</restitution>
+         <spring>0</spring>
+         <damping>0</damping>
+		    </NxJointLimitSoftDesc>
+      </NxJointLimitSoftPairDesc>
+          <NxJointDriveDesc id="xDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="yDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="zDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="slerpDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="swingDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="twistDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <drivePosition>0 0 0</drivePosition>
+          <driveOrientation>0 0 0 1</driveOrientation>
+          <driveLinearVelocity>0 0 0</driveLinearVelocity>
+          <driveAngularVelocity>0 0 0</driveAngularVelocity>
+      <projectionMode>NX_JPM_NONE</projectionMode>
+      <projectionDistance>0.02</projectionDistance>
+      <projectionAngle>0.087264627</projectionAngle>
+          <gearRatio>1</gearRatio>
+          <NxD6JointFlag id="flags">
+            <NX_D6JOINT_SLERP_DRIVE>false</NX_D6JOINT_SLERP_DRIVE>
+            <NX_D6JOINT_GEAR_ENABLED>false</NX_D6JOINT_GEAR_ENABLED>
+          </NxD6JointFlag>
+    </NxD6JointDesc>
+    <NxD6JointDesc>
+      <NxJointDesc id="ob_chair_wood.obj_3" userProperties="" name="ob_chair_wood.obj_3">
+        <actor0>ob_chair_wood.obj_2</actor0>
+        <actor1>ob_chair_wood.obj_3</actor1>
+        <localNormal0>0.633184493 -0.773974776 0.006350664</localNormal0>
+        <localAxis0>0.773935854 0.633216381 0.007762362</localAxis0>
+        <localAnchor0>0.131858885 0.161178052 -0.001322508</localAnchor0>
+        <localNormal1>0.633184493 -0.773974776 0.006350664</localNormal1>
+        <localAxis1>0.773935854 0.633216381 0.007762362</localAxis1>
+        <localAnchor1>-0.13185887 0.161178052 -0.001322508</localAnchor1>
+        <maxForce>FLT_MAX</maxForce>
+        <maxTorque>FLT_MAX</maxTorque>
+        <NxJointFlag id="jointFlags">
+          <NX_JF_COLLISION_ENABLED>false</NX_JF_COLLISION_ENABLED>
+          <NX_JF_VISUALIZATION>true</NX_JF_VISUALIZATION>
+        </NxJointFlag>
+        <planeLimitPoint>0 0 0</planeLimitPoint>
+        <onActor2>false</onActor2>
+      </NxJointDesc>
+      <xMotion>NX_D6JOINT_MOTION_LOCKED</xMotion>
+      <yMotion>NX_D6JOINT_MOTION_LOCKED</yMotion>
+      <zMotion>NX_D6JOINT_MOTION_LOCKED</zMotion>
+      <swing1Motion>NX_D6JOINT_MOTION_LOCKED</swing1Motion>
+      <swing2Motion>NX_D6JOINT_MOTION_LOCKED</swing2Motion>
+      <twistMotion>NX_D6JOINT_MOTION_LIMITED</twistMotion>
+      <NxJointLimitSoftDesc id="linearLimit">
+        <value>0</value>
+        <restitution>0</restitution>
+        <spring>0</spring>
+        <damping>0</damping>
+      </NxJointLimitSoftDesc>
+      <NxJointLimitSoftPairDesc id="twistLimit">
+        <NxJointLimitSoftDesc id="low">
+          <value>-1.57076323</value>
+          <restitution>0</restitution>
+          <spring>0</spring>
+          <damping>0</damping>
+		    </NxJointLimitSoftDesc>
+       <NxJointLimitSoftDesc id="high">
+         <value>1.57076323</value>
+         <restitution>0</restitution>
+         <spring>0</spring>
+         <damping>0</damping>
+		    </NxJointLimitSoftDesc>
+      </NxJointLimitSoftPairDesc>
+          <NxJointDriveDesc id="xDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="yDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="zDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="slerpDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="swingDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="twistDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <drivePosition>0 0 0</drivePosition>
+          <driveOrientation>0 0 0 1</driveOrientation>
+          <driveLinearVelocity>0 0 0</driveLinearVelocity>
+          <driveAngularVelocity>0 0 0</driveAngularVelocity>
+      <projectionMode>NX_JPM_NONE</projectionMode>
+      <projectionDistance>0.02</projectionDistance>
+      <projectionAngle>0.087264627</projectionAngle>
+          <gearRatio>1</gearRatio>
+          <NxD6JointFlag id="flags">
+            <NX_D6JOINT_SLERP_DRIVE>false</NX_D6JOINT_SLERP_DRIVE>
+            <NX_D6JOINT_GEAR_ENABLED>false</NX_D6JOINT_GEAR_ENABLED>
+          </NxD6JointFlag>
+    </NxD6JointDesc>
+    <NxD6JointDesc>
+      <NxJointDesc id="ob_chair_wood.obj_5" userProperties="" name="ob_chair_wood.obj_5">
+        <actor0>ob_chair_wood.obj_4</actor0>
+        <actor1>ob_chair_wood.obj_5</actor1>
+        <localNormal0>-0.998864353 0.005344858 0.047343094</localNormal0>
+        <localAxis0>0.005338864 0.999985695 -0.000253046</localAxis0>
+        <localAnchor0>-0.041009039 -0.003087163 -0.011725247</localAnchor0>
+        <localNormal1>-0.998864353 0.005344858 0.047343094</localNormal1>
+        <localAxis1>0.005338864 0.999985695 -0.000253046</localAxis1>
+        <localAnchor1>0.244369775 -0.001307607 -0.011582375</localAnchor1>
+        <maxForce>FLT_MAX</maxForce>
+        <maxTorque>FLT_MAX</maxTorque>
+        <NxJointFlag id="jointFlags">
+          <NX_JF_COLLISION_ENABLED>false</NX_JF_COLLISION_ENABLED>
+          <NX_JF_VISUALIZATION>true</NX_JF_VISUALIZATION>
+        </NxJointFlag>
+        <planeLimitPoint>0 0 0</planeLimitPoint>
+        <onActor2>false</onActor2>
+      </NxJointDesc>
+      <xMotion>NX_D6JOINT_MOTION_LOCKED</xMotion>
+      <yMotion>NX_D6JOINT_MOTION_LOCKED</yMotion>
+      <zMotion>NX_D6JOINT_MOTION_LOCKED</zMotion>
+      <swing1Motion>NX_D6JOINT_MOTION_LOCKED</swing1Motion>
+      <swing2Motion>NX_D6JOINT_MOTION_LOCKED</swing2Motion>
+      <twistMotion>NX_D6JOINT_MOTION_LIMITED</twistMotion>
+      <NxJointLimitSoftDesc id="linearLimit">
+        <value>0</value>
+        <restitution>0</restitution>
+        <spring>0</spring>
+        <damping>0</damping>
+      </NxJointLimitSoftDesc>
+      <NxJointLimitSoftPairDesc id="twistLimit">
+        <NxJointLimitSoftDesc id="low">
+          <value>-1.57076323</value>
+          <restitution>0</restitution>
+          <spring>0</spring>
+          <damping>0</damping>
+		    </NxJointLimitSoftDesc>
+       <NxJointLimitSoftDesc id="high">
+         <value>1.57076323</value>
+         <restitution>0</restitution>
+         <spring>0</spring>
+         <damping>0</damping>
+		    </NxJointLimitSoftDesc>
+      </NxJointLimitSoftPairDesc>
+          <NxJointDriveDesc id="xDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="yDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="zDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="slerpDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="swingDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <NxJointDriveDesc id="twistDrive">
+            <NxD6JointDriveType id="driveType">
+              <NX_D6JOINT_DRIVE_POSITION>true</NX_D6JOINT_DRIVE_POSITION>
+              <NX_D6JOINT_DRIVE_VELOCITY>false</NX_D6JOINT_DRIVE_VELOCITY>
+            </NxD6JointDriveType>
+            <spring>0</spring>
+            <damping>0</damping>
+            <forceLimit>FLT_MAX</forceLimit>
+          </NxJointDriveDesc>
+          <drivePosition>0 0 0</drivePosition>
+          <driveOrientation>0 0 0 1</driveOrientation>
+          <driveLinearVelocity>0 0 0</driveLinearVelocity>
+          <driveAngularVelocity>0 0 0</driveAngularVelocity>
+      <projectionMode>NX_JPM_NONE</projectionMode>
+      <projectionDistance>0.02</projectionDistance>
+      <projectionAngle>0.087264627</projectionAngle>
+          <gearRatio>1</gearRatio>
+          <NxD6JointFlag id="flags">
+            <NX_D6JOINT_SLERP_DRIVE>false</NX_D6JOINT_SLERP_DRIVE>
+            <NX_D6JOINT_GEAR_ENABLED>false</NX_D6JOINT_GEAR_ENABLED>
+          </NxD6JointFlag>
+    </NxD6JointDesc>
+  </NxSceneDesc>
+	 <NxSceneInstance id="ob_chair_wood">
+	 	 <sceneName>ob_chair_wood</sceneName>
+	 	 <NxuUserProperties></NxuUserProperties>
+	 	 <rootNode>1	0	0	0	1	0	0	0	1	0	0 0</rootNode>
+	 	 <newScene>false</newScene>
+	 	 <ignorePlane>true</ignorePlane>
+	 	 <numSceneInstances>0</numSceneInstances>
+	 </NxSceneInstance>
+  </NxuPhysicsCollection>
+</NXUSTREAM2>

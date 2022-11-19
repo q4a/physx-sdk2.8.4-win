@@ -1,0 +1,18 @@
+newmtl pitbull1
+Ns 30
+Ka 0 0 0
+Kd 0.992157 0.796078 0.717647
+Ks 0.0901961 0.0901961 0.0901961
+map_Kd pitbull1.bmp
+newmtl pitbull2
+Ns 30
+Ka 0 0 0
+Kd 0.996078 0.996078 0.996078
+Ks 0.482353 0.356863 0.294118
+map_Kd pitbull2.bmp
+newmtl pitbull3
+Ns 30
+Ka 0 0 0
+Kd 0.811765 0.654902 0.686275
+Ks 0.890196 0.898039 0.917647
+map_Kd pitbull3.bmp
