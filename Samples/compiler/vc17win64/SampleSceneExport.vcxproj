@@ -86,14 +86,17 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>../../../bin/win64\</OutDir>
     <IntDir>x64/SampleSceneExport/Release\</IntDir>
+    <TargetName>$(ProjectName)64</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>../../../bin/win64\</OutDir>
     <IntDir>x64/SampleSceneExport/Debug\</IntDir>
+    <TargetName>$(ProjectName)64DEBUG</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='checked|x64'">
     <OutDir>../../../bin/win64\</OutDir>
     <IntDir>x64/SampleSceneExport/checked\</IntDir>
+    <TargetName>$(ProjectName)64CHECKED</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
