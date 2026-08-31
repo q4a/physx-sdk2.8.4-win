@@ -1,0 +1,15 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Include Guard
+#ifndef ICE_PREFETCH_H
+#define ICE_PREFETCH_H
+
+inline_ void _prefetch(void const* ptr);
+
+#ifdef _XBOX
+#include "xbox360/IcePrefetch_XBOX.h"
+#else
+inline_ void _prefetch(void const* ptr) { (void)*(char const volatile *)ptr; }
+#endif
+
+
+#endif // ICE_PREFETCH_H

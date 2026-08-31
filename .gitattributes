@@ -1,0 +1,12 @@
+_Installer/PhysX-2.8.3-sdk/SDKs/lib/linux64/libPhysXCore.a filter=lfs diff=lfs merge=lfs -text
+_Installer/PhysX-2.8.3-sdk/SDKs/lib/metro/ARM/debug/PhysXCore.lib filter=lfs diff=lfs merge=lfs -text
+_Installer/PhysX-2.8.3-sdk/SDKs/lib/metro/ARM/release/PhysXCore.lib filter=lfs diff=lfs merge=lfs -text
+_Installer/PhysX-2.8.3-sdk/SDKs/lib/metro/Win32/release/PhysXCore.lib filter=lfs diff=lfs merge=lfs -text
+_Installer/PhysX-2.8.3-sdk/SDKs/lib/metroBlue/ARM/debug/PhysXCore.lib filter=lfs diff=lfs merge=lfs -text
+_Installer/PhysX-2.8.3-sdk/SDKs/lib/metroBlue/ARM/release/PhysXCore.lib filter=lfs diff=lfs merge=lfs -text
+_Installer/PhysX-2.8.3-sdk/SDKs/lib/metroBlue/Win32/release/PhysXCore.lib filter=lfs diff=lfs merge=lfs -text
+_Installer/PhysX-2.8.3-sdk/SDKs/lib/win32static/PhysXCore.lib filter=lfs diff=lfs merge=lfs -text
+_Installer/PhysX-2.8.3-sdk/SDKs/lib/win64static/PhysXCore.lib filter=lfs diff=lfs merge=lfs -text
+_Installer/PhysX-2.8.3-sdk/SDKs/lib/WP8/ARM/debug/PhysXCore.lib filter=lfs diff=lfs merge=lfs -text
+_Installer/PhysX-2.8.3-sdk/SDKs/lib/WP8/ARM/release/PhysXCore.lib filter=lfs diff=lfs merge=lfs -text
+_Installer/PhysX-2.8.3-sdk/SDKs/lib/WP8/Win32/release/PhysXCore.lib filter=lfs diff=lfs merge=lfs -text
