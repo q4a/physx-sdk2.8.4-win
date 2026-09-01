@@ -1,0 +1,26 @@
+PhysX SPU GUIDs: 
+SPU_AtomGenRelease.elf: de 1b d1 54 84 9b fb 3a
+SPU_AtomListSorterRelease.elf: d9 1e e6 c7 d7 5f e3 58
+SPU_BpCreateEndpointsRelease.elf: e0 0f 81 83 4f 66 4d be
+SPU_BpCreatePairsRelease.elf: 82 5f 38 73 9b a7 d2 51
+SPU_BpSortEndpointsRelease.elf: f8 68 1a 93 48 44 70 49
+SPU_BpUpdateVolumesRelease.elf: 52 c2 9c e1 38 ee 1c d7
+SPU_ClothCollisionRelease.elf: c0 a7 11 7e 0a 19 58 97
+SPU_ClothIntegrateRelease.elf: b1 2a 5d e3 2d 41 1c 97
+SPU_ClothUpdateRelease.elf: d5 5d 9c 3d b0 a0 20 4a
+SPU_ConstraintPrepRelease.elf: 6a 1e 0e aa 86 8f 60 f5
+SPU_FluidCollisionRelease.elf: 97 01 fb 89 8c b0 7b c2
+SPU_FluidDynamicRelease.elf: 80 47 a7 a1 dd 38 1e 71
+SPU_FluidSimpleDynamicsJobRelease.elf: 8d b2 47 7e 15 37 1c 71
+SPU_FluidSpatialHashRelease.elf: 28 fe 7a 85 d9 53 67 a5
+SPU_FluidUpdateParticlesJobRelease.elf: 4c a1 e9 fe ad 7e f7 2f
+SPU_HeightFieldRelease.elf: a8 5a 65 2c 3c 34 fa f7
+SPU_IslandGenerationRelease.elf: 5c 90 8b b1 ad e5 3c 39
+SPU_NarrowPhase1Release.elf: 8e 28 89 5e 4c 2b 75 b2
+SPU_NarrowPhase2Release.elf: 89 bf 68 e8 a6 a0 b6 e7
+SPU_NarrowPhase3Release.elf: 1f 8f 04 85 cd 7f cd ef
+SPU_NarrowPhase4Release.elf: 16 a2 b0 c7 f6 a1 41 1a
+SPU_RaycastRelease.elf: ed 34 aa 10 92 a7 e9 c6
+SPU_SendEventJobRelease.elf: e7 94 b4 44 1a aa 06 d8
+SPU_SolverFinalizationRelease.elf: 06 43 9c e0 0d e5 7e fc
+SPU_SolverRelease.elf: 2a 74 e7 59 e4 67 19 12

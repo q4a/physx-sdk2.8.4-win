@@ -10,3 +10,4 @@ _Installer/PhysX-2.8.3-sdk/SDKs/lib/win64static/PhysXCore.lib filter=lfs diff=lf
 _Installer/PhysX-2.8.3-sdk/SDKs/lib/WP8/ARM/debug/PhysXCore.lib filter=lfs diff=lfs merge=lfs -text
 _Installer/PhysX-2.8.3-sdk/SDKs/lib/WP8/ARM/release/PhysXCore.lib filter=lfs diff=lfs merge=lfs -text
 _Installer/PhysX-2.8.3-sdk/SDKs/lib/WP8/Win32/release/PhysXCore.lib filter=lfs diff=lfs merge=lfs -text
+_Installer/PhysX-2.8.4.4-8253868-sdk-pdb/Src-XBOX360/APEX/lib/xbox360-PhysX_2.8.4/ApexFrameworkSHIPPING.lib filter=lfs diff=lfs merge=lfs -text

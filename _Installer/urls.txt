@@ -7,5 +7,6 @@ Installers:
 2.8.1.15 - http://files.fyxm.net/68/68633/PhysX_2.8.1_SDK_Core.msi
 
 PDB files:
+2.8.4.4  - UE3 8253868  - https://archive.org/details/udk-engine-ps-3-xbox-360-pc.-7z
 2.8.0.7  - https://archive.org/details/Rise_of_the_Argonauts_CSF
 2.7.1.3  - https://archive.org/details/ageia-physxcore-2-7-1-3
