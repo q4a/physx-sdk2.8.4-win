@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{2a83d571-3af4-4528-bed4-f54f3b9e7e0e}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{bdd0fec1-5404-466b-8df4-82d58ea4a145}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{0e0efe10-a3f9-49ab-a280-9da186143218}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="math3d">
+      <UniqueIdentifier>{387e109c-12ed-4851-861f-e9001bc426c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="meshes">
+      <UniqueIdentifier>{8e18491e-79d7-4453-987b-0fb392a7ac48}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="glrenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NxTetra.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math3d\Geometry3D.cpp">
+      <Filter>math3d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math3d\tribox.cpp">
+      <Filter>math3d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Meshes\FileScanner.cpp">
+      <Filter>meshes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Meshes\HullMesh.cpp">
+      <Filter>meshes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Meshes\IsoMesh.cpp">
+      <Filter>meshes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Meshes\Mesh.cpp">
+      <Filter>meshes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Meshes\MeshHash.cpp">
+      <Filter>meshes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Meshes\Parser.cpp">
+      <Filter>meshes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Meshes\QuadricSimplificator.cpp">
+      <Filter>meshes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Meshes\Subdivider.cpp">
+      <Filter>meshes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Meshes\TetraMesh.cpp">
+      <Filter>meshes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Meshes\TetraStuffer.cpp">
+      <Filter>meshes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NxTetra.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math3d\Geometry3D.h">
+      <Filter>math3d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math3d\m3Affine.h">
+      <Filter>math3d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math3d\m3AffineMotion.h">
+      <Filter>math3d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math3d\m3Bounds.h">
+      <Filter>math3d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math3d\m3Matrix.h">
+      <Filter>math3d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math3d\m3Plane.h">
+      <Filter>math3d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math3d\m3Real.h">
+      <Filter>math3d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math3d\m3Vector.h">
+      <Filter>math3d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math3d\math3d.h">
+      <Filter>math3d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math3d\tribox.h">
+      <Filter>math3d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Meshes\FileScanner.h">
+      <Filter>meshes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Meshes\HullMesh.h">
+      <Filter>meshes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Meshes\IsoMesh.h">
+      <Filter>meshes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Meshes\MarchingCubes.h">
+      <Filter>meshes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Meshes\Mesh.h">
+      <Filter>meshes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Meshes\MeshHash.h">
+      <Filter>meshes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Meshes\Parser.h">
+      <Filter>meshes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Meshes\QuadricSimplificator.h">
+      <Filter>meshes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Meshes\Subdivider.h">
+      <Filter>meshes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Meshes\TetraMesh.h">
+      <Filter>meshes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Meshes\TetraStuffer.h">
+      <Filter>meshes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>
